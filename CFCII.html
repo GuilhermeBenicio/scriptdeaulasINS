@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- font Awesome -->
+    <script src="https://kit.fontawesome.com/b9b1dab4ed.js" crossorigin="anonymous"></script>
+
+
+    <title>Scripts de Aula</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.onload = function () {
+            /*var rfr = document.referrer;
+            if(rfr!="https://revolucao-instrutorial.guilhermebenici.repl.co/"){
+              window.location.href = "index.html";
+            }*/
+            let nick = sessionStorage.getItem('nick');
+            document.getElementById('text').innerHTML =
+                `Olá, sou o(a) instrutor(a) ${nick} e irei lhe aplicar o Curso de Formação de Cabos, parte 02.`
+            if (nick == null) {
+                window.location.href = "index.html";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- should be placed just after the `<head>` code -->
+    <script>
+        document.documentElement.className += ' spoiler-js';
+    </script>
+
+    <section id="section2">
+        <div class="font-weight-bold bg-dark text-white text-center mb-3"><i
+                class="fas fa-pencil-alt text-white mr-2"></i>Curso de Formação de Cabos (CFC-2)</div>
+        <div class="container">
+            <div class="card mt-3 mb-3">
+                <div class="card-body">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text btn btn-primary" id="copy-text-btn">Copiar</div>
+                        </div>
+                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                            aria-describedby="btnGroupAddon" id="text">
+                        </div>
+                    </div>
+                    <div class="input-group mb-4">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text btn btn-primary" id="copy-text-btn2">Copiar</div>
+                        </div>
+                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                            aria-describedby="btnGroupAddon" id="text2">Nele você aprenderá mais a fundo sobre o fórum
+                            da Polícia RCC e sobre o System da RCC.
+                        </div>
+                    </div>
+
+                    <div class="input-group mb-4">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text btn btn-primary" id="copy-text-btn3">Copiar</div>
+                        </div>
+                        <div type="text" class="form-control font-weight-bold" aria-label="Exemplo de grupo de input"
+                            aria-describedby="btnGroupAddon" id="text3">Já possui uma conta ativada no RCC System ou
+                            fórum?
+                        </div>
+                    </div>
+
+                    <i class="fas fa-arrow-circle-right text-danger"></i> <span class="text-danger ">[Caso você não
+                        possa dar seguimento ao CFC II ou o cabo recusar a aplicação.]</span>
+
+                    <div class="input-group mb-4">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text btn btn-primary" id="copy-text-btn4">Copiar</div>
+                        </div>
+                        <div type="text" class="form-control font-weight-bold" aria-label="Exemplo de grupo de input"
+                            aria-describedby="btnGroupAddon" id="text4">Você sabe como ativar uma conta no RCC System ou
+                            no fórum?
+                        </div>
+                    </div>
+
+                    <i class="fas fa-arrow-circle-right text-danger"></i> <span class="text-danger ">[Caso a resposta
+                        seja positiva, diga:]</span>
+
+                    <div class="input-group mb-5">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text btn btn-primary" id="copy-text-btn5">Copiar</div>
+                        </div>
+                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                            aria-describedby="btnGroupAddon" id="text5">Certo, então pode ativá-la(s). Qualquer dúvida,
+                            me pergunte.
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text btn btn-primary" id="copy-text-btn6">Copiar</div>
+                        </div>
+                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                            aria-describedby="btnGroupAddon" id="text6">Lembre-se as suas contas de Habbo / System /
+                            Fórum devem ter senhas diferentes.
+                        </div>
+                    </div>
+
+                    <i class="fas fa-arrow-circle-right text-danger mb-4"></i> <span class="text-danger">[Caso a
+                        resposta seja negativa, continue a partir do spoiler "Caso o cabo não tenha as contas ou não
+                        saiba conferir:"]</span> <br>
+
+                    <i class="fas fa-arrow-circle-right text-danger"></i> <span class="text-danger">[Caso o cabo tenha
+                        as duas contas ativas, pergunte:]</span>
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text btn btn-primary" id="copy-text-btn7">Copiar</div>
+                        </div>
+                        <div type="text" class="form-control font-weight-bold" aria-label="Exemplo de grupo de input"
+                            aria-describedby="btnGroupAddon" id="text7">Você sabe como conferir os policiais e
+                            exonerados no RCC System?
+                        </div>
+                    </div>
+
+                    <i class="fas fa-arrow-circle-right text-danger"></i> <span class="text-danger">[Caso o cabo já
+                        tenha as contas e saiba conferir, continue do "Teste Prático"]</span>
+
+                    <script>
+                        document.documentElement.className += ' spoiler-js';
+                    </script>
+
+                    <div class="spoiler spoiler-primary spoiler-state-collapsed"
+                        data-toggle-text="Caso o cabo não tenha as contas ou não saiba conferir:"
+                        data-toggle-placement="Caso o cabo não tenha as contas ou não saiba conferir:">
+                        <div class="spoiler-content">
+
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text btn btn-primary" id="copy-text-btn8">Copiar</div>
+                                </div>
+                                <div type="text" class="form-control font-weight-bold"
+                                    aria-label="Exemplo de grupo de input" aria-describedby="btnGroupAddon" id="text8">
+                                    Você está pelo computador ou pelo mobile?
+                                </div>
+                            </div>
+
+                            <i class="fas fa-arrow-circle-right text-danger"></i> <span class="text-danger">[Caso o cabo
+                                já tenha as contas e saiba conferir, continue do "Teste Prático"]</span>
+
+                            <div class="spoiler spoiler-primary spoiler-state-collapsed"
+                                data-toggle-text="Caso esteja pelo mobile:"
+                                data-toggle-placement="Caso esteja pelo mobile:">
+                                <div class="spoiler-content">
+
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn9">Copiar
+                                            </div>
+                                        </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text9">Caso não consiga dividir tela,
+                                            provavelmente, vai acabar tendo que reentrar no jogo.
+                                        </div>
+                                    </div>
+
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn10">Copiar
+                                            </div>
+                                        </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text10">Por isso, o mais recomendável
+                                            para ter um bom aproveitamento da aula no estilo mobile, é que após
+                                        </div>
+                                    </div>
+
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn11">Copiar
+                                            </div>
+                                        </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text11">lhe passado o método do
+                                            conteúdo, seja vídeo ou slide, você o visualize sozinho, tente fazer
+                                        </div>
+                                    </div>
+
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn12">Copiar
+                                            </div>
+                                        </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text12">os procedimentos conforme
+                                            aprendido e, feito isso, tendo já as contas ativas e sabendo usar o System
+                                        </div>
+                                    </div>
+
+                                    <div class="input-group mb-4">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn13">Copiar
+                                            </div>
+                                        </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text13">de forma simultânea ao jogo,
+                                            chame um instrutor para continuidade de sua aula.
+                                        </div>
+                                    </div>
+
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn14">Copiar
+                                            </div>
+                                        </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text14">Vale ressaltar que temos um
+                                            pequeno conteúdo a mais para ensinar, por exemplo a como dividir tela,
+                                        </div>
+                                    </div>
+
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn15">Copiar
+                                            </div>
+                                        </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text15">além de algumas dicas para
+                                            mobiles em geral. Sendo encontrado das seguintes formas:
+                                        </div>
+                                    </div>
+
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn16">Copiar
+                                            </div>
+                                        </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text16">- Slide: encontra-se em um link
+                                            destacado logo pelo índice, nas primeiras páginas;
+                                        </div>
+                                    </div>
+
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn16">Copiar
+                                            </div>
+                                        </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text16">- Vídeo: encontra-se na
+                                            descrição, basta clicar em "ler mais".
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text btn btn-primary" id="copy-text-btn17">Copiar</div>
+                                </div>
+                                <div type="text" class="form-control font-weight-bold"
+                                    aria-label="Exemplo de grupo de input" aria-describedby="btnGroupAddon" id="text17">
+                                    Antes de iniciarmos, você prefere a opção por vídeo ou slide (texto)?
+                                </div>
+                            </div>
+
+                            <div class="spoiler spoiler-primary spoiler-state-collapsed" data-toggle-text="Opção vídeo:"
+                                data-toggle-placement="Opção vídeo:">
+                                <div class="spoiler-content">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn18">Copiar
+                                            </div>
+                                        </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text18">Agora que aprenderá a criar suas
+                                            contas no fórum e system, lembre-se que suas senhas
+                                        </div>
+                                    </div>
+
+                                    <div class="input-group mb-4">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn19">Copiar
+                                            </div>
+                                        </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text19">das três plataformas (Habbo /
+                                            System / Fórum) devem ser sempre diferentes.
+                                        </div>
+                                    </div>
+
+                                    <i class="fas fa-arrow-circle-right text-danger"></i> <span
+                                        class="text-danger">[Caso o cabo já tenha as contas e saiba conferir, continue
+                                        do "Teste Prático"]</span>
+
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn20">Copiar
+                                            </div>
+                                        </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text20">Existe um vídeo tutorial dessa
+                                            aula no youtube, siga as instruções para encontrar:
+                                        </div>
+                                    </div>
+
+
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn21">Copiar
+                                            </div>
+                                        </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text21">- Abra uma nova guia em seu
+                                            navegador;
+                                        </div>
+                                    </div>
+
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn22">Copiar
+                                            </div>
+                                        </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text22">- Acesse o seguinte link:
+                                            bit*ly/ins-cfc2 (Troque "*" por ".")
+                                        </div>
+                                    </div>
+
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn23">Copiar
+                                            </div>
+                                        </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text23">- Avise-me ao abrir o vídeo.
+                                        </div>
+                                    </div>
+
+                                    <i class="fas fa-arrow-circle-right text-danger"></i> <span
+                                        class="text-danger">[Caso o cabo não consiga achar pelo navegador, peça para que
+                                        ele pesquise o link encurtado: KqekX3rwNVY ou pesquisando no youtube por INS
+                                        aula de CFC II]</span> <br>
+
+                                    <i class="fas fa-arrow-circle-right text-danger"></i> <span
+                                        class="text-danger">[Aguarde o cabo encontrar o vídeo]</span> <br><br>
+
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn24">Copiar
+                                            </div>
+                                        </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text24">Veja o vídeo até o final, mas
+                                            caso já tenha alguma conta é permitido que acelere ou adiante o vídeo
+                                        </div>
+                                    </div>
+
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn25">Copiar
+                                            </div>
+                                        </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text25">para pular aquilo que não lhe
+                                            servirá.
+                                        </div>
+                                    </div>
+
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn26">Copiar
+                                            </div>
+                                        </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text26">Quando acabar, me avise. Evite
+                                            inatividade e pergunte aqui caso tenha dúvida.
+                                        </div>
+                                    </div>
+
+                                    <i class="fas fa-arrow-circle-right text-danger"></i> <span
+                                        class="text-danger">[Aguarde a confirmação do cabo de que o vídeo foi
+                                        assistido]</span> <br> <br>
+
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn27">Copiar
+                                            </div>
+                                        </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text27">É importante lembrar que caso o
+                                            policial tenha sido promovido recentemente, sua TAG
+                                        </div>
+                                    </div>
+
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn28">Copiar
+                                            </div>
+                                        </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text28">pode estar desatualizada no
+                                            system, porém, no perfil dele terá a postagem de promoção.
+                                        </div>
+                                    </div>
+
+                                    <div class="input-group mb-4">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn29">Copiar
+                                            </div>
+                                        </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text29">Nessa situação copie a TAG que
+                                            estiver na postagem de promoção para evitar confusões.
+                                        </div>
+                                    </div>
+
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn30">Copiar
+                                            </div>
+                                        </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text30">Alguma dúvida diante de todo o
+                                            conteúdo que foi passado pelo vídeo?
+                                        </div>
+                                    </div>
+
+                                    <i class="fas fa-arrow-circle-right text-danger"></i> <span
+                                        class="text-danger">[Aguarde a confirmação do cabo de que o vídeo foi
+                                        assistido]</span>
+                                </div>
+                            </div>
+
+                            <div class="spoiler spoiler-primary spoiler-state-collapsed" data-toggle-text="Opção slide:"
+                                data-toggle-placement="Opção slide:">
+                                <div class="spoiler-content">
+
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn31">Copiar
+                                            </div>
+                                        </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text31">Acesse o seguinte link:
+                                            bit*ly/cfc-2 (troque "*" por "."), avise-me ao acessar.
+                                        </div>
+                                    </div>
+
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn32">Copiar
+                                            </div>
+                                        </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text32">Siga as instruções dele sempre
+                                            que ele mandar retornar até aqui.
+                                        </div>
+                                    </div>
+
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn33">Copiar
+                                            </div>
+                                        </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text33">Se tiver qualquer dúvida,
+                                            retorne e diga.
+                                        </div>
+                                    </div>
+
+                                    <div class="input-group mb-4">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn34">Copiar
+                                            </div>
+                                        </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text34">Evite dormir. Caso fique +4
+                                            minutos ausente, envie um balão de fala branco. Pode começar a leit
+                                        </div>
+                                    </div>
+
+                                    <i class="fas fa-arrow-circle-right text-danger mb-4"></i> <span
+                                        class="text-danger">[Aguarde a confirmação do cabo de que o vídeo foi
+                                        assistido]</span>
+
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn35">Copiar
+                                            </div>
+                                        </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text35">Alguma dúvida diante de todo o
+                                            conteúdo que foi passado pelo slide?
+                                        </div>
+                                    </div>
+
+                                    <i class="fas fa-arrow-circle-right text-danger"></i> <span
+                                        class="text-danger mb-4">[Continue no tópico "TESTE PRÁTICO", caso o cabo não
+                                        tenha enviado ainda tudo que é solicitado no teste prático. Caso tenha enviado,
+                                        continue da finalização.]</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+              <div class="card-body">
+                <div class="input-group mb-4">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text btn btn-primary" id="copy-text-btn36">Copiar</div>
+                        </div>
+                        <div type="text" class="form-control font-weight-bold" aria-label="Exemplo de grupo de input"
+                            aria-describedby="btnGroupAddon" id="text36" style="color: #4C1919">[TESTE PRÁTICO]
+                        </div>
+                    </div>
+
+                     <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn37">Copiar
+                                            </div>
+                                        </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text37"><span class="font-weight-bold">Etapa 1:</span> Copie e cole aqui a SUA IDENWTIFICAÇÃO, encontrada pelo buscar usuário ou na listagem.
+                                        </div>
+                                    </div>
+
+                      <i class="fas fa-arrow-circle-right text-danger mb-4"></i> <span
+                                        class="text-danger">[Espere o(a) Cabo enviar a TAG, verifique-a e prossiga para a próxima etapa. Caso o(a) Cabo envie a TAG errada, auxilie-o(a).]</span>
+
+                      <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn38">Copiar
+                                            </div>
+                                        </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text38"><span class="font-weight-bold">Etapa 2:</span> Copie e cole aqui a MINHA IDENTIFICAÇÃO, encontrada pelo buscar usuário ou na listagem.
+                                        </div>
+                                    </div>
+
+                                    <i class="fas fa-arrow-circle-right text-danger mb-4"></i> <span
+                                        class="text-danger">[Espere o(a) Cabo enviar a TAG, verifique-a e prossiga para a próxima etapa. Caso o(a) Cabo envie a TAG errada, auxilie-o(a).]</span>
+
+                                        <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn39">Copiar
+                                            </div>
+                                        </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text39"><span class="font-weight-bold">Etapa 3:</span> Copie e cole aqui um EXONERADO, encontrado na Listagem: Exonerados.
+                                        </div>
+                                    </div>
+
+                                    <i class="fas fa-arrow-circle-right text-danger mb-4"></i> <span
+                                        class="text-danger">[Espere o(a) Cabo enviar a TAG, verifique-a e prossiga para a próxima etapa. Caso o(a) Cabo envie a TAG errada, auxilie-o(a).]</span>
+              </div>
+            </div>
+
+            <div class="card mb-3">
+              <div class="card-body">
+
+                <div class="input-group mb-4">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text btn btn-primary" id="copy-text-btn40">Copiar</div>
+                        </div>
+                        <div type="text" class="form-control font-weight-bold" aria-label="Exemplo de grupo de input"
+                            aria-describedby="btnGroupAddon" id="text40" style="color: #4C1919">[FINALIZAÇÃO]
+                        </div>
+                    </div>
+
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text btn btn-primary" id="copy-text-btn41">Copiar</div>
+                        </div>
+                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                            aria-describedby="btnGroupAddon" id="text41">Parabéns, você foi qualificado(a) no Curso de Formação de Cabos (CFC).
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text btn btn-primary" id="copy-text-btn42">Copiar</div>
+                        </div>
+                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                            aria-describedby="btnGroupAddon" id="text42" style="color: #4C1919">Altere sua missão e troque [CFC1] por [CFC].
+                        </div>
+                    </div>
+
+                    <i class="fas fa-arrow-circle-right text-danger"></i> <span
+                                        class="text-danger">[Espere o militar realizar os procedimentos para seguir o script]</span>
+
+                                        <div class="input-group mb-4">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text btn btn-primary" id="copy-text-btn43">Copiar</div>
+                        </div>
+                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                            aria-describedby="btnGroupAddon" id="text43">Agora que concluiu o CFC, procure um supervisor (brevê verde) para obter a SEG.
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text btn btn-primary" id="copy-text-btn44">Copiar</div>
+                        </div>
+                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                            aria-describedby="btnGroupAddon" id="text44">Aguarde, irei postar a instrução.
+                        </div>
+                    </div>
+              </div>
+            </div>
+
+            <div class="alert alert-primary" role="alert">
+              <p>É de suma importância que poste todas suas instruções, mesmo que os alunos tenham reprovados ou saiam durante a aula;</p>
+              
+              <p>Certifique-se de que os nicks estejam corretos;</p>
+              
+              <p class="mb-4">Se o policial tiver caído ou esteja demonstrando inatividade, aguarde entre 3 a 5 minutos para postar a instrução;</p>
+
+  <p class="mb-4">Caso ainda não tenha aberto o link no começo da instrução, <a href="https://iformv2.vercel.app/?username=&lesson=cap" class="alert-link">CLIQUE AQUI</a> e corrija o horário de início da instrução antes de confirmar o envio.</p>
+
+  <p class="font-weight-bold">Pontuação da aula: 1 ponto.</p>
+</div>
+
+<div class="card">
+  <div class="card-header">Legenda</div>
+  <div class="card-body">
+    <p><span class="font-weight-bold">Preto</span> - Tudo que deve ser falado durante a aula.</p>
+    <p><span class="font-weight-bold" style="color: #660000;">Marrom</span> - Tudo que deve ser falado durante a aula.</p>
+    <p><span class="font-weight-bold" style="color: red;">Vermelho</span> - Tudo que deve ser falado durante a aula.</p>
+    <p><span class="font-weight-bold" style="color: #330066;">Roxo</span> - Tudo que deve ser falado durante a aula.</p>
+  </div>
+</div>
+    </section>
+
+    <script src="js.js"></script>
+
+
+</body>
+
+</html>
