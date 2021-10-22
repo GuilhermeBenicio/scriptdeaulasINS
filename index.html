@@ -18,1052 +18,117 @@
     <link rel="stylesheet" href="style.css">
     <script>
       window.onload = function(){
-        let nick = sessionStorage.getItem('nick');
-        let tag = sessionStorage.getItem('tag');
-        document.getElementById('text').innerHTML = `Olá, recruta. Eu sou o(a) instrutor(a) ${nick}`
-        document.getElementById('text72').innerHTML = `Escreva em sua missão: [RCC] Soldado [${tag}]`
-        if(nick == null || tag == null ) {
-        window.location.href = "index.html";
-        }
-        }
-  
+        let url = window.location.href
+        let usuario = url.substring(url.indexOf("=") + 1);
 
-                          
+        let preencher = document.getElementById("nick")
+        preencher.value = usuario
+      }
     </script>
 </head>
 
 <body>
+
+  <script>
+    /*
+    window.onload = function(){
+      var rfr = document.referrer; 
+      if(rfr != "https://www.policiarcc.com/" ){ 
+      window.location.href = "a.html";
+      }
+    }
+    */
+  </script>
   
-    <section id="section2">
-        <div class="font-weight-bold bg-dark text-white text-center mb-3"><i
-                class="fas fa-pencil-alt text-white mr-2"></i>Curso de Formação de Soldado (CFSd)</div>
-        <div class="container">
-            <div class="card mt-3 mb-3">
-                <div class="card-body">
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text">
-                        </div>
-                    </div>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn2">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text2">Seja bem-vindo(a) à RCC! Permaneça em silêncio e
-                            preste atenção
-                            ao
-                            conteúdo repassado na instrução.
-                        </div>
-                    </div>
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn3">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text3">Se eu sair do jogo, me aguarde 5 minutos e caso
-                            eu
-                            não retorne,
-                            volte
-                            para o batalhão.
-                        </div>
-                    </div>
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn4">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text4">Entendido, recruta?
-                        </div>
-                    </div>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn5">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text5">A Polícia Militar Revolução Contra o Crime (RCC)
-                            agradece por
-                            ter
-                            escolhido essa grande família.
-                        </div>
-                    </div>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn6">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text6">A RCC foi fundada em 2007, pelo habbo nabas201
-                            e,
-                            atualmente,
-                        </div>
-                    </div>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn7">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text7">nossos supremos são os senhores: -Edhone /
-                            Mine315-BAN (Eles
-                            são
-                            autoridade máxima.)
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="card mb-3">
-                <div class="card-body">
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn8">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control font-weight-bold" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text8" style="color: #4C1919">[FORMA DE TRATAMENTO E
-                            ATENDIMENTO]
-                        </div>
-                    </div>
- 
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn10">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control font-weight-bold" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text10">A forma correta de se dirigir a um
-                            SUBALTERNO(inferior)/PAR é:
-                            [Patente/Cargo] + [Nick].
-                        </div>
-                    </div>
-
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn11">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control font-weight-bold" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text11">A forma correta de se dirigir a um SUPERIOR
-                            hierárquico é:
-                            Senhor(a) + [Patente/Cargo] + [Nick].
-                        </div>
-                    </div>
-                    <i class="fas fa-arrow-circle-right text-danger mb-4"></i> <span class="text-danger">[A
-                        partir de agora cobre o pronome "senhor(a)" do recruta, caso ele não o use corretamente]</span>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn12">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control font-weight-bold" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text12">Para o alistamento, é obrigatório que o civil
-                            porte
-                            três
-                            requisitos: MISSÃO, FARDA e GRUPO.
-                        </div>
-                    </div>
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn13">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control font-weight-bold" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text13">A MISSÃO do civil deverá estar toda em BRANCO,
-                            com
-                            o espaço
-                            completamente VAZIO.
-                        </div>
-                    </div>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn14">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text14">A farda do recruta deverá ser toda preta (HC ou
-                            não
-                            HC). O
-                            civil não poderá entrar com boina,
-                        </div>
-                    </div>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn15">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text15">acessórios, barba ou rosto com barba, número
-                            nas
-                            costas, e o
-                            balão de fala deve ser da cor branca.
-                        </div>
-                    </div>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn16">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text16">O recruta deve possuir o grupo da "Polícia
-                            RCC", os
-                            donos são
-                            os senhores supremos e RCCEmblemas.
-                        </div>
-                    </div>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn17">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text17">É proibida a entrada de recruta/policial com
-                            grupo
-                            de outra
-                            organização militar/polícia.
-                        </div>
-                    </div>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn18">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text18">Também é proibida a entrada de
-                            recrutas/policiais
-                            com grupos
-                            que vão contra a Habbo Etiqueta.
-                        </div>
-                    </div>
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn19">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text19">Se algum recruta/policial fazer parte de algum
-                            grupo proibido,
-                            peça ao mesmo que se retire dele(s).
-                        </div>
-                    </div>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn20">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text20">Ao avistar um superior na recepção, você tem o
-                            dever de
-                            assumi-lo na função. Para identificar a
-                        </div>
-                    </div>
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn21">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text21">patente/cargo de um militar e descobrir se é
-                            seu
-                            superior,
-                            confira sua missão e fardamento.
-                        </div>
-                    </div>
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn22">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control font-weight-bold" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text22">Deixe um quadrado entre você e o superior que
-                            irá
-                            assumir e
-                            diga: Assumo, senhor(a).
-                        </div>
-                    </div>
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn23">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text23">Caso precise sair ou pedir ajuda, acene que um
-                            policial com
-                            balão de fala vermelho irá te ajudar.
-                        </div>
-                    </div>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn24">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text24">Alguma dúvida?
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card mb-3">
-                <div class="card-body">
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn25">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control font-weight-bold" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text25" style="color: #4C1919">[TESTE TEÓRICO]
-                        </div>
-                    </div>
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn26">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text26">Agora, irei fazer algumas perguntas
-                            relacionadas à
-                            aula. Caso erre duas questões, será reprovado(a).
-                        </div>
-                    </div>
-
-                    <!-- should be placed just after the `<head>` code -->
-                    <script>
-                        document.documentElement.className += ' spoiler-js';
-                    </script>
-
-                    <!-- inicio do spoiler principal -->
-                    <div class="spoiler spoiler-primary spoiler-state-collapsed"
-                        data-toggle-text="Caso haja mais de um recruta"
-                        data-toggle-placement="Caso haja mais de um recruta">
-                        <div class="spoiler-content">
-                            <!-- inicio do spoiler principal -->
-                            <div class="input-group mb-4">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text btn btn-primary" id="copy-text-btn27">Copiar</div>
-                                </div>
-                                <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                    aria-describedby="btnGroupAddon" id="text27">Vocês conseguem sussurrar comigo?
-                                </div>
-                            </div>
-                            <i class="fas fa-arrow-circle-right text-danger mb-4"></i> <span class="text-danger">[Caso
-                                os
-                                recrutas consigam sussurrar. Caso contrário,
-                                continue na próxima orientação em vermelho"]</span>
-                            <div class="input-group mb-4">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text btn btn-primary" id="copy-text-btn28">Copiar</div>
-                                </div>
-                                <div type="text" class="form-control font-weight-bold"
-                                    aria-label="Exemplo de grupo de input" aria-describedby="btnGroupAddon" id="text28">
-                                    Todas
-                                    as respostas deverão ser enviadas via sussurro, caso envie fora será considerado um
-                                    erro.
-                                </div>
-                            </div>
-                            <i class="fas fa-arrow-circle-right text-danger mb-4"></i> <span class="text-danger">[Caso
-                                não
-                                tenham conseguido sussurrar]</span>
-                            <div class="input-group mb-4">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text btn btn-primary" id="copy-text-btn29">Copiar</div>
-                                </div>
-                                <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                    aria-describedby="btnGroupAddon" id="text29">Você joga pelo computador (aplicativo
-                                    ou
-                                    navegador) ou celular?
-                                </div>
-                            </div>
-                            <!-- inicio do spoiler secundario -->
-                            <div class="spoiler spoiler-primary spoiler-state-collapsed"
-                                data-toggle-text="Caso o recruta não tenha conseguido sussurrar (PC ou notebook versão flash):"
-                                data-toggle-placement="Caso o recruta não tenha conseguido sussurrar (PC ou notebook versão flash):">
-                                <!-- inicio do spoiler secundario -->
-                                <div class="spoiler-content">
-                                    <div class="input-group mb-4">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text btn btn-primary" id="copy-text-btn30">Copiar
-                                            </div>
-                                        </div>
-                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                            aria-describedby="btnGroupAddon" id="text30">Cliquem no meu avatar, e em
-                                            seguida
-                                            em "Sussurrar". Feito isso, enviem-me uma mensagem.
-                                        </div>
-                                    </div>
-                                    <i class="fas fa-arrow-circle-right text-danger mb-4"></i> <span
-                                        class="text-danger">[Caso o recruta não tenha conseguido]</span>
-                                    <div class="input-group mb-4">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text btn btn-primary" id="copy-text-btn31">Copiar
-                                            </div>
-                                        </div>
-                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                            aria-describedby="btnGroupAddon" id="text31">Certo, aguardem-me. Irei
-                                            reentrar
-                                            no
-                                            quarto.
-                                        </div>
-                                    </div>
-                                    <i class="fas fa-arrow-circle-right text-danger mb-4"></i> <span
-                                        class="text-danger">[Caso os recrutas consigam sussurrar]</span>
-                                    <div class="input-group mb-4">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text btn btn-primary" id="copy-text-btn32">Copiar
-                                            </div>
-                                        </div>
-                                        <div type="text" class="form-control font-weight-bold"
-                                            aria-label="Exemplo de grupo de input" aria-describedby="btnGroupAddon"
-                                            id="text32">Todas as respostas deverão ser enviadas via sussurro, caso envie
-                                            fora
-                                            será considerado um erro.
-                                        </div>
-                                    </div>
-                                </div> <!-- fim do spoiler secundario -->
-                            </div> <!-- fim do spoiler secundario -->
-                            <!-- inicio do spoiler terciario -->
-                            <div class="spoiler spoiler-primary spoiler-state-collapsed"
-                                data-toggle-text="Caso o recruta não tenha conseguido sussurrar (PC ou notebook versão BETA):"
-                                data-toggle-placement="Caso o recruta não tenha conseguido sussurrar (PC ou notebook versão BETA):">
-                                <!-- inicio do spoiler terciario -->
-                                <div class="spoiler-content">
-                                    <div class="input-group mb-4">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text btn btn-primary" id="copy-text-btn33">Copiar
-                                            </div>
-                                        </div>
-                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                            aria-describedby="btnGroupAddon" id="text33">Pressione a tecla "Alt" ou "Alt
-                                            Gr"
-                                            e clique no meu avatar. Após isso, aperte em "Sussurrar".
-                                        </div>
-                                    </div>
-                                    <i class="fas fa-arrow-circle-right text-danger mb-4"></i> <span
-                                        class="text-danger">[Caso os recrutas consigam sussurrar]</span>
-                                    <div class="input-group mb-4">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text btn btn-primary" id="copy-text-btn34">Copiar
-                                            </div>
-                                        </div>
-                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                            aria-describedby="btnGroupAddon" id="text34">Todas as respostas deverão ser
-                                            enviadas via sussurro, caso envie fora será considerado um erro.
-                                        </div>
-                                    </div>
-                                </div> <!-- fim do spoiler terciario -->
-                            </div> <!-- fim do spoiler terciario -->
-                            <!-- inicio do spoiler quartenario -->
-                            <div class="spoiler spoiler-primary spoiler-state-collapsed"
-                                data-toggle-text="Caso o recruta não tenha conseguido sussurrar (tablet ou celular):"
-                                data-toggle-placement="Caso o recruta não tenha conseguido sussurrar (tablet ou celular):">
-                                <!-- inicio do spoiler quartenario -->
-                                <div class="spoiler-content">
-                                    <div class="input-group mb-4">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text btn btn-primary" id="copy-text-btn35">Copiar
-                                            </div>
-                                        </div>
-                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                            aria-describedby="btnGroupAddon" id="text35">Segure o dedo em mim e apertem
-                                            em
-                                            "Sussurrar". Feito isso, enviem-me uma mensagem.
-                                        </div>
-                                    </div>
-                                    <i class="fas fa-arrow-circle-right text-danger mb-4"></i> <span
-                                        class="text-danger">[Caso não consiga selecionar seu
-                                        personagem]</span>
-                                    <div class="input-group mb-4">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text btn btn-primary" id="copy-text-btn36">Copiar
-                                            </div>
-                                        </div>
-                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                            aria-describedby="btnGroupAddon" id="text36">Pressione o dedo onde meu
-                                            boneco
-                                            está e selecione o avatar, após isso, apertem em "Sussurrar".
-                                        </div>
-                                    </div>
-                                    <i class="fas fa-arrow-circle-right text-danger mb-4"></i> <span
-                                        class="text-danger">[Caso os recrutas consigam sussurrar]</span>
-                                    <div class="input-group mb-4">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text btn btn-primary" id="copy-text-btn37">Copiar
-                                            </div>
-                                        </div>
-                                        <div type="text" class="form-control font-weight-bold"
-                                            aria-label="Exemplo de grupo de input" aria-describedby="btnGroupAddon"
-                                            id="text37">Todas as respostas deverão ser enviadas via sussurro, caso envie
-                                            fora
-                                            será considerado um erro.
-                                        </div>
-                                    </div>
-                                </div> <!-- fim do spoiler quartenario -->
-                            </div> <!-- fim do spoiler quartenario -->
-
-                        </div> <!-- fim do spoiler principal -->
-                    </div> <!-- fim do spoiler principal -->
-
-                    <i class="fas fa-arrow-circle-right text-danger "></i> <span class="text-danger mb-4">[Caso o
-                        recruta
-                        atinja a quantidade de erros, deverá ser
-                        reprovado imediatamente. Caso tenha outros, aguarde o reprovado retirar-se para dar
-                        continuidade.]</span>
-                    <div class="input-group mt-3 mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn38">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text38">1) Quais são os 3 requisitos necessários para o
-                            alistamento?
-                        </div>
-                    </div>
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn39">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control text-muted" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text39">R: Missão, grupo e farda.
-                        </div>
-                    </div>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn40">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control font-weight-bold" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text40">2) Como você deve se dirigir a SUBALTERNOS
-                            (INFERIORES) e PARES de patente/cargo?
-                        </div>
-                    </div>
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn41">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control text-muted" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text41">R: Patente/Cargo + Nick
-                        </div>
-                    </div>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn42">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control font-weight-bold" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text42">3) Como você deve se dirigir a SUPERIORES de
-                            patente/cargo?
-                        </div>
-                    </div>
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn43">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control text-muted" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text43">R: Senhor(a) + Patente/Cargo + Nick
-                        </div>
-                    </div>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn44">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control font-weight-bold" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text44">4) Como deve estar a missão de um recruta?
-                        </div>
-                    </div>
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn45">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control text-muted" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text45">R: Em branco/vazia.
-                        </div>
-                    </div>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn46">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control font-weight-bold" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text46">5) Qual é a forma correta de assumir um
-                            superior na
-                            recepção?
-                        </div>
-                    </div>
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn47">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control text-muted" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text47">R: Estando a um quadrado de distância de sua
-                            cadeira e falando: "Assumo, senhor/senhora".
-                        </div>
-                    </div>
-                    <i class="fas fa-arrow-circle-right text-danger"></i> <span class="text-danger">[AOS REPROVADOS NO
-                        TESTE
-                        TEÓRICO]:</span>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn48">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text48">Lamento, você está reprovado(a). Mas não
-                            desista,
-                            retorne ao batalhão e aliste-se novamente.
-                        </div>
-                    </div>
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn49">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text49">Confio no seu potencial e sei que é capaz de
-                            ser
-                            aprovado(a)
-                        </div>
-                    </div>
-                    <i class="fas fa-arrow-circle-right text-danger"></i> <span class="text-danger ">[OPCIONAL]:</span>
-                    <!-- inicio do 2 spoiler principal -->
-                    <div class="spoiler spoiler-primary spoiler-state-collapsed"
-                        data-toggle-text="Prática na salas automáticas:"
-                        data-toggle-placement="Prática na salas automáticas:">
-                        <div class="spoiler-content">
-                            <!-- inicio do 2 spoiler principal -->
-                            <div class="input-group mb-4">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text btn btn-primary" id="copy-text-btn50">Copiar</div>
-                                </div>
-                                <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                    aria-describedby="btnGroupAddon" id="text50">Irei realizar uma prática agora para
-                                    avaliar se você prestou atenção na aula.
-                                </div>
-                            </div>
-                            <p><i class="fas fa-arrow-circle-right text-danger mb-2"></i> <span class="text-danger">Peça
-                                    a
-                                    um dos recrutas que lhe assuma na recepção;</span></p>
-                            <p><i class="fas fa-arrow-circle-right text-danger mb-2"></i> <span
-                                    class="text-danger">Coloque
-                                    um visual de recruta com acessórios disfarçados (boina, número nas costas, calças
-                                    sem
-                                    bolsos, etc) e peça para que um recruta te aliste, ou simplesmente te sussurre quais
-                                    os
-                                    erros no seu fardamento.</span></p>
-                            <p><i class="fas fa-arrow-circle-right text-danger mb-2"></i> <span
-                                    class="text-danger ">Obs:
-                                    Você vai retirando à medida que os recrutas forem citando.</span></p>
-                        </div> <!-- fim do 2 spoiler principal -->
-                    </div> <!-- fim do 2 spoiler principal -->
-                </div>
-            </div>
-            <div class="card mb-3">
-                <div class="card-body">
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn51">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control font-weight-bold" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text51" style="color: #4C1919">[COMANDOS]
-                        </div>
-                    </div>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn52">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text52">Na RCC nós temos 8 comandos, sendo eles:
-                            Sentido,
-                            continência, apresentar armas,
-                        </div>
-                    </div>
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn53">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text53">marcar passos, silêncio, à vontade,
-                            apresente-se e
-                            dispensado.
-                        </div>
-                    </div>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn54">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text54">Sem contar com o apresente-se e o dispensado,
-                            você
-                            sabe executar os demais comandos da RCC?
-                        </div>
-                    </div>
-                    <i class="fas fa-arrow-circle-right text-danger mt-4"></i> <span class="text-danger ">[PRATIQUE CADA
-                        COMANDO LOGO APÓS EXPLICÁ-LO, ANTES DE PROSSEGUIR AO PRÓXIMO]</span>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn55">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text55"><span class="font-weight-bold">1.
-                                Sentido:</span>
-                            Nesse comando você deverá dar um passo à frente.
-                        </div>
-                    </div>
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn56">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text56">Enquanto estiver no comando sentido, permaneça
-                            em
-                            silêncio, reto e imóvel.
-                        </div>
-                    </div>
-
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn57">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text57"><span class="font-weight-bold">2.
-                                Continência:</span> Nesse comando você deverá acenar uma única vez. Dica: Envie "o/".
-                        </div>
-                    </div>
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn58">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text58"><span class="font-weight-bold">3. Apresentar
-                                armas:</span> Nesse comando você deverá acenar sem parar,
-                        </div>
-                    </div>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn59">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text59"><span class="font-weight-bold">4. Marcar
-                                passos:</span> Nesse comando você deverá dançar hap-hop sem sair do local.
-                        </div>
-                    </div>
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn60">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text60">Poderá parar quando for dado "sentido"
-                            novamente.
-                            Clique em parar de dançar para parar.
-                        </div>
-                    </div>
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn61">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text61"><span class="font-weight-bold">5.
-                                Silêncio:</span>
-                            Nesse comando não é permitido que você fale, nem responda perguntas sem permissão.
-                        </div>
-                    </div>
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn62">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text62"><span class="font-weight-bold">6. À
-                                vontade:</span>
-                            Nesse comando você estará livre para retornar ao que estava fazendo.
-                        </div>
-                    </div>
-                    <i class="fas fa-arrow-circle-right text-danger mt-2"></i> <span class="text-danger">[Caso tenha
-                        apenas
-                        praticado os comandos com o recruta ou explicado e praticado, continue o script daqui]</span>
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn63">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text63">Os comandos apresente-se e dispensado você irá
-                            aprender em um dos cursos de soldado.
-                        </div>
-                    </div>
-                    <i class="fas fa-arrow-circle-right text-danger"></i> <span class="text-danger ">[Caso o
-                        recruta já
-                        esteja falando em negrito, siga para a próxima orientação em vermelho]</span>
-                </div>
-            </div>
-
-
-            <div class="card mb-3">
-                <div class="card-body">
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn64">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control font-weight-bold" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text64" style="color: #4C1919">[NEGRITO]
-                        </div>
-                    </div>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn65">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text65">Já sabe falar em negrito?
-                        </div>
-                    </div>
-                    <div class="spoiler spoiler-primary spoiler-state-collapsed"
-                        data-toggle-text="Caso o recruta não saiba utilizar o negrito:"
-                        data-toggle-placement="Caso o recruta não saiba utilizar o negrito:">
-                        <div class="spoiler-content">
-                            <div class="spoiler spoiler-primary spoiler-state-collapsed"
-                                data-toggle-text="Caso o recruta não saiba utilizar o negrito (PC ou notebook versão flash):"
-                                data-toggle-placement="Caso o recruta não saiba utilizar o negrito (PC ou notebook versão flash):">
-                                <div class="spoiler-content">
-                                    <div class="input-group mb-2">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text btn btn-primary" id="copy-text-btn66">Copiar
-                                            </div>
-                                        </div>
-                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                            aria-describedby="btnGroupAddon" id="text66">Digite "Teste" e pressione o
-                                            shift juntamente com o enter para enviar.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="spoiler spoiler-primary spoiler-state-collapsed"
-                                data-toggle-text="Caso o recruta não saiba utilizar o negrito (tablet ou celular):"
-                                data-toggle-placement="Caso o recruta não saiba utilizar o negrito (tablet ou celular):">
-                                <div class="spoiler-content">
-                                    <div class="input-group mb-2">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text btn btn-primary" id="copy-text-btn67">Copiar
-                                            </div>
-                                        </div>
-                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                            aria-describedby="btnGroupAddon" id="text67">No local da fala e clique no
-                                            lado esquerdo. Feito isso, onde tem escrito "fale", troque por "Gritar".
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <i class="fas fa-arrow-circle-right text-danger mt-2"></i> <span class="text-danger ">[Caso o
-                        recruta tenha conseguido utilizar o negrito ou já tenha demonstrado utilizá-lo durante a
-                        instrução.]</span>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn68">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text68">Muito bem, sempre utilize o negrito dentro das
-                            dependências da instituição.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card mb-3">
-                <div class="card-body">
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn69">Copiar</div>
-                        </div>
-                        <div type="text" class="form-control font-weight-bold" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text69" style="color: #4C1919">[FINALIZAÇÃO]
-                        </div>
-                    </div>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn70">Copiar
-                            </div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text70">Meus parabéns, você foi aprovado(a) no Curso de
-                            Formação de Soldados. Coloque uma boina preta.
-                        </div>
-                    </div>
-                    <p><i class="fas fa-arrow-circle-right text-danger mt-2"></i> <span class="text-danger ">[Espere o
-                            recruta colocar a sua boina para enviar a próxima mensagem.]</span></p>
-                    <i class="fas fa-arrow-circle-right text-danger mb-4"></i><span class="text-danger ">[Caso esteja no
-                        batalhão auxiliar, peça-o para vestir a camisa de soldado na tonalidade marrom; se não, aguarde
-                        até o corredor.]</span>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn71">Copiar
-                            </div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text71">Com exceção do cinto com pistola, os demais
-                            acessórios só são permitidos a partir de sargento.
-
-                        </div>
-                    </div>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn72">Copiar
-                            </div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text72">
-                        </div>
-                    </div>
-                    <div class="spoiler spoiler-primary spoiler-state-collapsed"
-                        data-toggle-text="Caso o soldado não saiba alterar a missão:"
-                        data-toggle-placement="Caso o soldado não saiba alterar a missão:">
-                        <div class="spoiler-content">
-                            <div class="spoiler spoiler-primary spoiler-state-collapsed"
-                                data-toggle-text="Caso o soldado não saiba alterar a missão (PC ou notebook versão flash/BETA):"
-                                data-toggle-placement="Caso o soldado não saiba alterar a missão (PC ou notebook versão flash/BETA):">
-                                <div class="spoiler-content">
-                                    <div class="input-group mb-2">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text btn btn-primary" id="copy-text-btn73">Copiar
-                                            </div>
-                                        </div>
-                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                            aria-describedby="btnGroupAddon" id="text73">- Abra o seu perfil;
-                                        </div>
-                                    </div>
-                                    <div class="input-group mb-2">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text btn btn-primary" id="copy-text-btn74">Copiar
-                                            </div>
-                                        </div>
-                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                            aria-describedby="btnGroupAddon" id="text74">- Abaixo do seu nick, tem um
-                                            lápis clique nele para colocar a sua missão;
-                                        </div>
-                                    </div>
-                                    <div class="input-group mb-2">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text btn btn-primary" id="copy-text-btn75">Copiar
-                                            </div>
-                                        </div>
-                                        <div type="text" class="form-control font-weight-bold"
-                                            aria-label="Exemplo de grupo de input" aria-describedby="btnGroupAddon"
-                                            id="text75">Essa é sua missão, agora anote nela: [RCC] Soldado [SUA TAG]
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="spoiler spoiler-primary spoiler-state-collapsed"
-                                data-toggle-text="Caso o soldado não saiba alterar a missão (tablet ou celular):"
-                                data-toggle-placement="Caso o soldado não saiba alterar a missão (tablet ou celular):">
-                                <div class="spoiler-content">
-                                    <div class="input-group mb-2">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text btn btn-primary" id="copy-text-btn76">Copiar
-                                            </div>
-                                        </div>
-                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                            aria-describedby="btnGroupAddon" id="text76">- Aperte na imagem do rosto do
-                                            seu avatar e clique em "Meu Perfil";
-                                        </div>
-                                    </div>
-                                    <div class="input-group mb-2">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text btn btn-primary" id="copy-text-btn77">Copiar
-                                            </div>
-                                        </div>
-                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                            aria-describedby="btnGroupAddon" id="text77">- Em seguida, aperte onde tem
-                                            um lápis do lado direito, clique nele.
-                                        </div>
-                                    </div>
-                                    <div class="input-group mb-2">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text btn btn-primary" id="copy-text-btn78">Copiar
-                                            </div>
-                                        </div>
-                                        <div type="text" class="form-control font-weight-bold"
-                                            aria-label="Exemplo de grupo de input" aria-describedby="btnGroupAddon"
-                                            id="text78">Essa é sua missão, agora anote nela: [RCC] Soldado [SUA TAG]
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <i class="fas fa-arrow-circle-right text-danger"></i><span class="text-danger "> [Espere o recruta
-                        colocar a sua missão corretamente para enviar a próxima mensagem.]</span>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn79">Copiar
-                            </div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text79">A seguir, você deverá fazer a Supervisão (SUP),
-                            com um policial de estrela verde (Supervisor)
-                        </div>
-                    </div>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn80">Copiar
-                            </div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text80">e o Curso de Aprimoramento de Soldados (CAS),
-                            com um policial de estrela vermelha (Treinador).
-                        </div>
-                    </div>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn81">Copiar
-                            </div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text81">Quando você quiser voltar a RCC após ter saído
-                            do jogo, procure em seu navegador de quartos por: RCC
-                        </div>
-                    </div>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn82">Copiar
-                            </div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text82">Os quartos de nossa polícia irão aparecer e
-                            basta você clicar no batalhão que estiver aberto.
-                        </div>
-                    </div>
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn83">Copiar
-                            </div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text83">Lembre-se que presença no batalhão é essencial
-                            para sua carreira militar e para ser promovido.
-                        </div>
-                    </div>
-                    <div class="input-group mb-4">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn84">Copiar
-                            </div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text84">Alguma dúvida?
-                        </div>
-                    </div>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn85">Copiar
-                            </div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text85">Aguarde, irei postar a instrução.
-                        </div>
-                    </div>
-                </div>
-            </div>
-             <div class="alert alert-primary" role="alert">
-              <p>É de suma importância que poste todas suas instruções, mesmo que os alunos tenham reprovados ou saiam durante a aula;</p>
-              
-              <p>Certifique-se de que os nicks estejam corretos;</p>
-              
-              <p class="mb-4">Se o policial tiver caído ou esteja demonstrando inatividade, aguarde entre 3 a 5 minutos para postar a instrução;</p>
-
-  <p class="mb-4">Caso ainda não tenha aberto o link no começo da instrução, <a href="https://iformv2.vercel.app/?username=&lesson=cap" class="alert-link">CLIQUE AQUI</a> e corrija o horário de início da instrução antes de confirmar o envio.</p>
-
-  <p class="font-weight-bold">Pontuação da aula: 2 pontos.</p>
-</div>
-
-<div class="card">
-  <div class="card-header">Legenda</div>
-  <div class="card-body">
-    <p><span class="font-weight-bold">Preto</span> - Tudo que deve ser falado durante a aula.</p>
-    <p><span class="font-weight-bold" style="color: #660000;">Marrom</span> - Tudo que deve ser falado durante a aula.</p>
-    <p><span class="font-weight-bold" style="color: red;">Vermelho</span> - Tudo que deve ser falado durante a aula.</p>
-    <p><span class="font-weight-bold" style="color: #330066;">Roxo</span> - Tudo que deve ser falado durante a aula.</p>
-  </div>
-</div>
-        </div>
-    </section>
-
-    <script src="CFSd.js"></script>
     
-  
+    <section class="conteudo d-flex justify-content-center align-items-center" id="section1">
+      <div class="card" id="cardIndex">
+        <div class="card-body">
+          <div class="form-group">
+            <div class="mb-4">
+                <label for="nickname" id="subtitulo">Nickname</label>
+                <input type="text" class="form-control" placeholder="Digite aqui seu nickname." id="nick">
+            </div>
+            <div class="mb-4">
+                <label for="tag" id="subtitulo2">TAG</label>
+                <input type="text" class="form-control" placeholder="Digite aqui sua TAG, exemplo: SnB" id="tag">
+            </div>
+            <div class="mb-4">
+                <label for="tag" id="subtitulo3">Selecione o script desejado</label>
+                <select name="script" class="form-control" id="select">
+                    <option value=""></option>
+                    <option value=1>Script de CFSd</option>
+                    <option value=2>Script de CFC I</option>
+                    <option value=3>Script de CFC II</option>
+                    <option value=4>Script de CAP</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <button class="btn btn-block btn-primary" onclick="prosseguir()"><span>Prosseguir</span></button>
+            </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <script>
+      /**
+         * JavaScript Máquina de Escrever
+         * ------------------
+         */
+        function typeWriter(elemento) {
+            const textoArray = elemento.innerHTML.split('');
+            elemento.innerHTML = ''
+            textoArray.forEach((letra, i) => {
+                setTimeout(() => elemento.innerHTML += letra, 75 * i)
+            });
+        }
+
+        const caption = document.querySelector('#subtitulo')
+        const caption2 = document.querySelector('#subtitulo2')
+        const caption3 = document.querySelector('#subtitulo3')
+        typeWriter(caption)
+        typeWriter(caption2)
+        typeWriter(caption3)
+
+        // -----------------------------------------------------
+        function prosseguir() {
+
+          let nickname = document.getElementById('nick').value;
+          let tag = document.getElementById('tag').value;
+          let curso = document.querySelector('#select').value
+
+          if(curso!=""&&tag!=""&&nickname!=""){
+            sessionStorage.setItem('nick', nickname);
+            
+            sessionStorage.setItem('tag', tag);
+            let botao = document.querySelector('#section1');
+            botao.classList.add("fadeOut");
+            if(document.querySelector('#select').value == 1) {
+              window.location.href = 'CFSd.html'
+            }
+
+            if(document.querySelector('#select').value == 2) {
+              window.location.href = 'CFCI.html'
+            }
+
+            if(document.querySelector('#select').value == 3) {
+              window.location.href = 'CFCII.html'
+            }
+
+            if(document.querySelector('#select').value == 4) {
+              window.location.href = 'CAP.html'
+            }
+            
+            } else {
+              alert("Algo de errado não está certo!")
+            }
+        }
+        
+        // -----------------------------------------------------
+     
+    </script>
 </body>
 
 </html>
