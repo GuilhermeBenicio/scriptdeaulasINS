@@ -901,6 +901,14 @@
                 estilo.classList.add('bg-primary')
                 estilo.style.color = 'white'
         }
+
+        document.querySelector('#copy-text-btn105').onclick =
+            function () {
+                copyText(document.querySelector('#text105'));
+                var estilo = document.querySelector('#text105')
+                estilo.classList.add('bg-primary')
+                estilo.style.color = 'white'
+        }
       
       
         
