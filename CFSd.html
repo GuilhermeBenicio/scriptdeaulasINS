@@ -17,20 +17,23 @@
     <title>Scripts de Aula</title>
     <link rel="stylesheet" href="style.css">
     <script>
-        window.onload = function () {
-            let nick = sessionStorage.getItem('nick');
-            let tag = sessionStorage.getItem('tag');
-            document.getElementById('text').innerHTML = `Olá, recruta. Eu sou o(a) instrutor(a) ${nick}`
-            document.getElementById('text72').innerHTML = `Escreva em sua missão: [RCC] Soldado [${tag}]`
-            if (nick == null || tag == null) {
-                window.location.href = "index.html";
-            }
+      window.onload = function(){
+        let nick = sessionStorage.getItem('nick');
+        let tag = sessionStorage.getItem('tag');
+        document.getElementById('text').innerHTML = `Olá, recruta. Eu sou o(a) instrutor(a) ${nick}`
+        document.getElementById('text72').innerHTML = `Escreva em sua missão: [RCC] Soldado [${tag}]`
+        if(nick == null || tag == null ) {
+        window.location.href = "index.html";
         }
+        }
+  
+
+                          
     </script>
 </head>
 
 <body>
-
+  
     <section id="section2">
         <div class="font-weight-bold bg-dark text-white text-center mb-3"><i
                 class="fas fa-pencil-alt text-white mr-2"></i>Curso de Formação de Soldado (CFSd)</div>
@@ -124,6 +127,16 @@
                         </div>
                     </div>
 
+                    <div class="input-group mb-4" hidden>
+                        <div class="input-group-prepend">
+                            <div class="input-group-text btn btn-primary" id="copy-text-btn9">Copiar</div>
+                        </div>
+                        <div type="text" class="form-control font-weight-bold" aria-label="Exemplo de grupo de input"
+                            aria-describedby="btnGroupAddon" id="text9" style="color: #4C1919">[FORMA DE TRATAMENTO E
+                            ATENDIMENTO]
+                        </div>
+                    </div>
+ 
                     <div class="input-group mb-2">
                         <div class="input-group-prepend">
                             <div class="input-group-text btn btn-primary" id="copy-text-btn10">Copiar</div>
@@ -502,8 +515,8 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text btn btn-primary" id="copy-text-btn39">Copiar</div>
                         </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text39" style="color: #330066; font-size: .9em;">R: Missão, grupo e farda.
+                        <div type="text" class="form-control text-muted" aria-label="Exemplo de grupo de input"
+                            aria-describedby="btnGroupAddon" id="text39">R: Missão, grupo e farda.
                         </div>
                     </div>
                     <div class="input-group mb-2">
@@ -519,8 +532,8 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text btn btn-primary" id="copy-text-btn41">Copiar</div>
                         </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text41" style="color: #330066; font-size: .9em;">R: Patente/Cargo + Nick
+                        <div type="text" class="form-control text-muted" aria-label="Exemplo de grupo de input"
+                            aria-describedby="btnGroupAddon" id="text41">R: Patente/Cargo + Nick
                         </div>
                     </div>
                     <div class="input-group mb-2">
@@ -536,8 +549,8 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text btn btn-primary" id="copy-text-btn43">Copiar</div>
                         </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text43" style="color: #330066; font-size: .9em;">R: Senhor(a) + Patente/Cargo + Nick
+                        <div type="text" class="form-control text-muted" aria-label="Exemplo de grupo de input"
+                            aria-describedby="btnGroupAddon" id="text43">R: Senhor(a) + Patente/Cargo + Nick
                         </div>
                     </div>
                     <div class="input-group mb-2">
@@ -552,8 +565,8 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text btn btn-primary" id="copy-text-btn45">Copiar</div>
                         </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text45" style="color: #330066; font-size: .9em;">R: Em branco/vazia.
+                        <div type="text" class="form-control text-muted" aria-label="Exemplo de grupo de input"
+                            aria-describedby="btnGroupAddon" id="text45">R: Em branco/vazia.
                         </div>
                     </div>
                     <div class="input-group mb-2">
@@ -570,8 +583,8 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text btn btn-primary" id="copy-text-btn47">Copiar</div>
                         </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text47" style="color: #330066; font-size: .9em;">R: Estando a um quadrado de distância de sua
+                        <div type="text" class="form-control text-muted" aria-label="Exemplo de grupo de input"
+                            aria-describedby="btnGroupAddon" id="text47">R: Estando a um quadrado de distância de sua
                             cadeira e falando: "Assumo, senhor/senhora".
                         </div>
                     </div>
@@ -1034,40 +1047,33 @@
                     </div>
                 </div>
             </div>
-            <div class="alert alert-primary" role="alert">
-                <p>É de suma importância que poste todas suas instruções, mesmo que os alunos tenham reprovados ou saiam
-                    durante a aula;</p>
+             <div class="alert alert-primary" role="alert">
+              <p>É de suma importância que poste todas suas instruções, mesmo que os alunos tenham reprovados ou saiam durante a aula;</p>
+              
+              <p>Certifique-se de que os nicks estejam corretos;</p>
+              
+              <p class="mb-4">Se o policial tiver caído ou esteja demonstrando inatividade, aguarde entre 3 a 5 minutos para postar a instrução;</p>
 
-                <p>Certifique-se de que os nicks estejam corretos;</p>
+  <p class="mb-4">Caso ainda não tenha aberto o link no começo da instrução, <a href="https://iformv2.vercel.app/?username=&lesson=cap" class="alert-link">CLIQUE AQUI</a> e corrija o horário de início da instrução antes de confirmar o envio.</p>
 
-                <p class="mb-4">Se o policial tiver caído ou esteja demonstrando inatividade, aguarde entre 3 a 5
-                    minutos para postar a instrução;</p>
+  <p class="font-weight-bold">Pontuação da aula: 2 pontos.</p>
+</div>
 
-                <p class="mb-4">Caso ainda não tenha aberto o link no começo da instrução, <a
-                        href="https://iformv2.vercel.app/?username=&lesson=cfsd" class="alert-link">CLIQUE AQUI</a> e
-                    corrija o horário de início da instrução antes de confirmar o envio.</p>
-
-                <p class="font-weight-bold">Pontuação da aula: 2 pontos.</p>
-            </div>
-
-            <div class="card">
-                <div class="card-header">Legenda</div>
-                <div class="card-body">
-                    <p><span class="font-weight-bold">Preto</span> - Tudo que deve ser falado durante a aula.</p>
-                    <p><span class="font-weight-bold" style="color: #660000;">Marrom</span> - Tudo que deve ser falado
-                        durante a aula.</p>
-                    <p><span class="font-weight-bold" style="color: red;">Vermelho</span> - Tudo que deve ser falado
-                        durante a aula.</p>
-                    <p><span class="font-weight-bold" style="color: #330066;">Roxo</span> - Tudo que deve ser falado
-                        durante a aula.</p>
-                </div>
-            </div>
+<div class="card">
+  <div class="card-header">Legenda</div>
+  <div class="card-body">
+    <p><span class="font-weight-bold">Preto</span> - Tudo que deve ser falado durante a aula.</p>
+    <p><span class="font-weight-bold" style="color: #660000;">Marrom</span> - Tudo que deve ser falado durante a aula.</p>
+    <p><span class="font-weight-bold" style="color: red;">Vermelho</span> - Tudo que deve ser falado durante a aula.</p>
+    <p><span class="font-weight-bold" style="color: #330066;">Roxo</span> - Tudo que deve ser falado durante a aula.</p>
+  </div>
+</div>
         </div>
     </section>
 
     <script src="js.js"></script>
-
-
+    
+  
 </body>
 
 </html>
