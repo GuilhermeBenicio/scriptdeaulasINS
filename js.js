@@ -893,6 +893,14 @@
                 estilo.classList.add('bg-primary')
                 estilo.style.color = 'white'
         }
+
+        document.querySelector('#copy-text-btn104').onclick =
+            function () {
+                copyText(document.querySelector('#text104'));
+                var estilo = document.querySelector('#text104')
+                estilo.classList.add('bg-primary')
+                estilo.style.color = 'white'
+        }
       
       
         
