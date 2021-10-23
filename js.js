@@ -881,7 +881,7 @@
         document.querySelector('#copy-text-btn102').onclick =
             function () {
                 copyText(document.querySelector('#text102'));
-                var estilo = document.querySelector('#text103')
+                var estilo = document.querySelector('#text102')
                 estilo.classList.add('bg-primary')
                 estilo.style.color = 'white'
         }
