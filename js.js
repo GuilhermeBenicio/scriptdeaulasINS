@@ -870,23 +870,6 @@
                 estilo.style.color = 'white'
         }
 
-        document.querySelector('#copy-text-btn92').onclick =
-            function () {
-                copyText(document.querySelector('#text100'));
-                var estilo = document.querySelector('#text100')
-                estilo.classList.add('bg-primary')
-                estilo.style.color = 'white'
-        }
-
-        document.querySelector('#copy-text-btn94').onclick =
-            function () {
-                copyText(document.querySelector('#text94'));
-                var estilo = document.querySelector('#text94')
-                estilo.classList.add('bg-primary')
-                estilo.style.color = 'white'
-        }
-
-
         document.querySelector('#copy-text-btn101').onclick =
             function () {
                 copyText(document.querySelector('#text101'));
