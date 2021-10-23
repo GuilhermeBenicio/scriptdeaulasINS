@@ -862,6 +862,14 @@
                 estilo.style.color = 'white'
         }
 
+        document.querySelector('#copy-text-btn100').onclick =
+            function () {
+                copyText(document.querySelector('#text100'));
+                var estilo = document.querySelector('#text100')
+                estilo.classList.add('bg-primary')
+                estilo.style.color = 'white'
+        }
+
         document.querySelector('#copy-text-btn101').onclick =
             function () {
                 copyText(document.querySelector('#text101'));
@@ -873,7 +881,7 @@
         document.querySelector('#copy-text-btn102').onclick =
             function () {
                 copyText(document.querySelector('#text102'));
-                var estilo = document.querySelector('#text102')
+                var estilo = document.querySelector('#text103')
                 estilo.classList.add('bg-primary')
                 estilo.style.color = 'white'
         }
@@ -882,14 +890,6 @@
             function () {
                 copyText(document.querySelector('#text103'));
                 var estilo = document.querySelector('#text103')
-                estilo.classList.add('bg-primary')
-                estilo.style.color = 'white'
-        }
-
-        document.querySelector('#copy-text-btn104').onclick =
-            function () {
-                copyText(document.querySelector('#text104'));
-                var estilo = document.querySelector('#text104')
                 estilo.classList.add('bg-primary')
                 estilo.style.color = 'white'
         }
