@@ -17,23 +17,22 @@
     <title>Scripts de Aula</title>
     <link rel="stylesheet" href="style.css">
     <script>
-      window.onload = function(){
-        let nick = sessionStorage.getItem('nick');
-        let tag = sessionStorage.getItem('tag');
-        document.getElementById('text').innerHTML = `Olá, recruta. Eu sou o(a) instrutor(a) ${nick}`
-        document.getElementById('text72').innerHTML = `Escreva em sua missão: [RCC] Soldado [${tag}]`
-        if(nick == null || tag == null ) {
-        window.location.href = "index.html";
+        window.onload = function () {
+            let nick = sessionStorage.getItem('nick');
+            let tag = sessionStorage.getItem('tag');
+            document.getElementById('text').innerHTML = `Olá, recruta. Eu sou o(a) instrutor(a) ${nick}`
+            document.getElementById('text74').innerHTML = `Escreva em sua missão: [RCC] Soldado [${tag}]`
+            document.getElementById('text77').innerHTML = `Escreva em sua missão: [RCC] Soldado [${tag}]`
+            document.getElementById('text80').innerHTML = `Escreva em sua missão: [RCC] Soldado [${tag}]`
+            if (nick == null || tag == null) {
+                window.location.href = "index.html";
+            }
         }
-        }
-  
-
-                          
     </script>
 </head>
 
 <body>
-  
+
     <section id="section2">
         <div class="font-weight-bold bg-dark text-white text-center mb-3"><i
                 class="fas fa-pencil-alt text-white mr-2"></i>Curso de Formação de Soldado (CFSd)</div>
@@ -136,16 +135,17 @@
                             ATENDIMENTO]
                         </div>
                     </div>
-                    
+
                     <div class="input-group mb-2">
                         <div class="input-group-prepend">
                             <div class="input-group-text btn btn-primary" id="copy-text-btn10">Copiar</div>
                         </div>
                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text10">Na RCC, nós temos uma relação entre superiores e inferiores/pares, sendo que:
+                            aria-describedby="btnGroupAddon" id="text10">Na RCC, nós temos uma relação entre superiores
+                            e inferiores/pares, sendo que:
                         </div>
                     </div>
- 
+
                     <div class="input-group mb-2">
                         <div class="input-group-prepend">
                             <div class="input-group-text btn btn-primary" id="copy-text-btn11">Copiar</div>
@@ -525,7 +525,8 @@
                             <div class="input-group-text btn btn-primary" id="copy-text-btn40">Copiar</div>
                         </div>
                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text40" style="color: #330066; font-size: .9em;">R: Missão, grupo e farda.
+                            aria-describedby="btnGroupAddon" id="text40" style="color: #330066; font-size: .9em;">R:
+                            Missão, grupo e farda.
                         </div>
                     </div>
                     <div class="input-group mb-2">
@@ -542,7 +543,8 @@
                             <div class="input-group-text btn btn-primary" id="copy-text-btn42">Copiar</div>
                         </div>
                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text42" style="color: #330066; font-size: .9em;">R: Patente/Cargo + Nick
+                            aria-describedby="btnGroupAddon" id="text42" style="color: #330066; font-size: .9em;">R:
+                            Patente/Cargo + Nick
                         </div>
                     </div>
                     <div class="input-group mb-2">
@@ -559,7 +561,8 @@
                             <div class="input-group-text btn btn-primary" id="copy-text-btn44">Copiar</div>
                         </div>
                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text44" style="color: #330066; font-size: .9em;">R: Senhor(a) + Patente/Cargo + Nick
+                            aria-describedby="btnGroupAddon" id="text44" style="color: #330066; font-size: .9em;">R:
+                            Senhor(a) + Patente/Cargo + Nick
                         </div>
                     </div>
                     <div class="input-group mb-2">
@@ -575,7 +578,8 @@
                             <div class="input-group-text btn btn-primary" id="copy-text-btn46">Copiar</div>
                         </div>
                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text46" style="color: #330066; font-size: .9em;">R: Em branco/vazia.
+                            aria-describedby="btnGroupAddon" id="text46" style="color: #330066; font-size: .9em;">R: Em
+                            branco/vazia.
                         </div>
                     </div>
                     <div class="input-group mb-2">
@@ -593,7 +597,8 @@
                             <div class="input-group-text btn btn-primary" id="copy-text-btn48">Copiar</div>
                         </div>
                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text48" style="color: #330066; font-size: .9em;">R: Estando a um quadrado de distância de sua
+                            aria-describedby="btnGroupAddon" id="text48" style="color: #330066; font-size: .9em;">R:
+                            Estando a um quadrado de distância de sua
                             cadeira e falando: "Assumo, senhor/senhora".
                         </div>
                     </div>
@@ -725,7 +730,7 @@
                                 Continência:</span> Nesse comando você deverá acenar uma única vez. Dica: Envie "o/".
                         </div>
                     </div>
-                    <div class="input-group mb-4">
+                    <div class="input-group mb-2">
                         <div class="input-group-prepend">
                             <div class="input-group-text btn btn-primary" id="copy-text-btn59">Copiar</div>
                         </div>
@@ -734,23 +739,22 @@
                                 armas:</span> Nesse comando você deverá acenar sem parar,
                         </div>
                     </div>
-                    <div class="input-group mb-2">
+                    <div class="input-group mb-4">
                         <div class="input-group-prepend">
                             <div class="input-group-text btn btn-primary" id="copy-text-btn60">Copiar</div>
                         </div>
                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text60"><span class="font-weight-bold">4. Marcar
-                                passos:</span> Nesse comando você deverá dançar hap-hop sem sair do local.
+                            aria-describedby="btnGroupAddon" id="text60"><span>devendo parar
+                                somente quando for dado o comando sentido. Dica: Envie "o/" a cada 3 segundos.
                         </div>
                     </div>
-                    <div class="input-group mb-4">
+                    <div class="input-group mb-2">
                         <div class="input-group-prepend">
                             <div class="input-group-text btn btn-primary" id="copy-text-btn61">Copiar</div>
                         </div>
                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text61">Poderá parar quando for dado "sentido"
-                            novamente.
-                            Clique em parar de dançar para parar.
+                            aria-describedby="btnGroupAddon" id="text61"><span class="font-weight-bold">4. Marcar
+                                passos:</span> Nesse comando você deverá dançar hap-hop sem sair do local.
                         </div>
                     </div>
                     <div class="input-group mb-4">
@@ -758,9 +762,9 @@
                             <div class="input-group-text btn btn-primary" id="copy-text-btn62">Copiar</div>
                         </div>
                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text62"><span class="font-weight-bold">5.
-                                Silêncio:</span>
-                            Nesse comando não é permitido que você fale, nem responda perguntas sem permissão.
+                            aria-describedby="btnGroupAddon" id="text62">Poderá parar quando for dado "sentido"
+                            novamente.
+                            Clique em parar de dançar para parar.
                         </div>
                     </div>
                     <div class="input-group mb-4">
@@ -768,7 +772,17 @@
                             <div class="input-group-text btn btn-primary" id="copy-text-btn63">Copiar</div>
                         </div>
                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text63"><span class="font-weight-bold">6. À
+                            aria-describedby="btnGroupAddon" id="text63"><span class="font-weight-bold">5.
+                                Silêncio:</span>
+                            Nesse comando não é permitido que você fale, nem responda perguntas sem permissão.
+                        </div>
+                    </div>
+                    <div class="input-group mb-4">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text btn btn-primary" id="copy-text-btn64">Copiar</div>
+                        </div>
+                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                            aria-describedby="btnGroupAddon" id="text64"><span class="font-weight-bold">6. À
                                 vontade:</span>
                             Nesse comando você estará livre para retornar ao que estava fazendo.
                         </div>
@@ -778,14 +792,14 @@
                         praticado os comandos com o recruta ou explicado e praticado, continue o script daqui]</span>
                     <div class="input-group mb-4">
                         <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn64">Copiar</div>
+                            <div class="input-group-text btn btn-primary" id="copy-text-btn65">Copiar</div>
                         </div>
                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text64">Os comandos apresente-se e dispensado você irá
+                            aria-describedby="btnGroupAddon" id="text65">Os comandos apresente-se e dispensado você irá
                             aprender em um dos cursos de soldado.
                         </div>
                     </div>
-                    <i class="fas fa-arrow-circle-right text-danger"></i> <span class="text-danger ">[Caso o
+                    <i class="fas fa-arrow-circle-right text-danger"></i> <span class="text-danger">[Caso o
                         recruta já
                         esteja falando em negrito, siga para a próxima orientação em vermelho]</span>
                 </div>
@@ -796,18 +810,18 @@
                 <div class="card-body">
                     <div class="input-group mb-4">
                         <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn65">Copiar</div>
+                            <div class="input-group-text btn btn-primary" id="copy-text-btn66">Copiar</div>
                         </div>
                         <div type="text" class="form-control font-weight-bold" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text65" style="color: #4C1919">[NEGRITO]
+                            aria-describedby="btnGroupAddon" id="text66" style="color: #4C1919">[NEGRITO]
                         </div>
                     </div>
                     <div class="input-group mb-2">
                         <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn66">Copiar</div>
+                            <div class="input-group-text btn btn-primary" id="copy-text-btn67">Copiar</div>
                         </div>
                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text66">Já sabe falar em negrito?
+                            aria-describedby="btnGroupAddon" id="text67">Já sabe falar em negrito?
                         </div>
                     </div>
                     <div class="spoiler spoiler-primary spoiler-state-collapsed"
@@ -820,11 +834,11 @@
                                 <div class="spoiler-content">
                                     <div class="input-group mb-2">
                                         <div class="input-group-prepend">
-                                            <div class="input-group-text btn btn-primary" id="copy-text-btn67">Copiar
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn68">Copiar
                                             </div>
                                         </div>
                                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                            aria-describedby="btnGroupAddon" id="text67">Digite "Teste" e pressione o
+                                            aria-describedby="btnGroupAddon" id="text68">Digite "Teste" e pressione o
                                             shift juntamente com o enter para enviar.
                                         </div>
                                     </div>
@@ -836,11 +850,11 @@
                                 <div class="spoiler-content">
                                     <div class="input-group mb-2">
                                         <div class="input-group-prepend">
-                                            <div class="input-group-text btn btn-primary" id="copy-text-btn68">Copiar
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn69">Copiar
                                             </div>
                                         </div>
                                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                            aria-describedby="btnGroupAddon" id="text68">No local da fala e clique no
+                                            aria-describedby="btnGroupAddon" id="text69">No local da fala e clique no
                                             lado esquerdo. Feito isso, onde tem escrito "fale", troque por "Gritar".
                                         </div>
                                     </div>
@@ -853,10 +867,10 @@
                         instrução.]</span>
                     <div class="input-group mb-2">
                         <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn69">Copiar</div>
+                            <div class="input-group-text btn btn-primary" id="copy-text-btn70">Copiar</div>
                         </div>
                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text69">Muito bem, sempre utilize o negrito dentro das
+                            aria-describedby="btnGroupAddon" id="text70">Muito bem, sempre utilize o negrito dentro das
                             dependências da instituição.
                         </div>
                     </div>
@@ -866,19 +880,19 @@
                 <div class="card-body">
                     <div class="input-group mb-4">
                         <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn70">Copiar</div>
+                            <div class="input-group-text btn btn-primary" id="copy-text-btn71">Copiar</div>
                         </div>
                         <div type="text" class="form-control font-weight-bold" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text70" style="color: #4C1919">[FINALIZAÇÃO]
+                            aria-describedby="btnGroupAddon" id="text71" style="color: #4C1919">[FINALIZAÇÃO]
                         </div>
                     </div>
                     <div class="input-group mb-2">
                         <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn71">Copiar
+                            <div class="input-group-text btn btn-primary" id="copy-text-btn72">Copiar
                             </div>
                         </div>
                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text71">Meus parabéns, você foi aprovado(a) no Curso de
+                            aria-describedby="btnGroupAddon" id="text72">Meus parabéns, você foi aprovado(a) no Curso de
                             Formação de Soldados. Coloque uma boina preta.
                         </div>
                     </div>
@@ -889,22 +903,22 @@
                         até o corredor.]</span>
                     <div class="input-group mb-2">
                         <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn72">Copiar
+                            <div class="input-group-text btn btn-primary" id="copy-text-btn73">Copiar
                             </div>
                         </div>
                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text72">Com exceção do cinto com pistola, os demais
+                            aria-describedby="btnGroupAddon" id="text73">Com exceção do cinto com pistola, os demais
                             acessórios só são permitidos a partir de sargento.
 
                         </div>
                     </div>
                     <div class="input-group mb-2">
                         <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn73">Copiar
+                            <div class="input-group-text btn btn-primary" id="copy-text-btn74">Copiar
                             </div>
                         </div>
                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text73">
+                            aria-describedby="btnGroupAddon" id="text74">
                         </div>
                     </div>
                     <div class="spoiler spoiler-primary spoiler-state-collapsed"
@@ -917,21 +931,11 @@
                                 <div class="spoiler-content">
                                     <div class="input-group mb-2">
                                         <div class="input-group-prepend">
-                                            <div class="input-group-text btn btn-primary" id="copy-text-btn74">Copiar
-                                            </div>
-                                        </div>
-                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                            aria-describedby="btnGroupAddon" id="text74">- Abra o seu perfil;
-                                        </div>
-                                    </div>
-                                    <div class="input-group mb-2">
-                                        <div class="input-group-prepend">
                                             <div class="input-group-text btn btn-primary" id="copy-text-btn75">Copiar
                                             </div>
                                         </div>
                                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                            aria-describedby="btnGroupAddon" id="text75">- Abaixo do seu nick, tem um
-                                            lápis clique nele para colocar a sua missão;
+                                            aria-describedby="btnGroupAddon" id="text75">- Abra o seu perfil;
                                         </div>
                                     </div>
                                     <div class="input-group mb-2">
@@ -939,9 +943,19 @@
                                             <div class="input-group-text btn btn-primary" id="copy-text-btn76">Copiar
                                             </div>
                                         </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text76">- Abaixo do seu nick, tem um
+                                            lápis clique nele para colocar a sua missão;
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn77">Copiar
+                                            </div>
+                                        </div>
                                         <div type="text" class="form-control font-weight-bold"
                                             aria-label="Exemplo de grupo de input" aria-describedby="btnGroupAddon"
-                                            id="text76">Essa é sua missão, agora anote nela: [RCC] Soldado [SUA TAG]
+                                            id="text77">
                                         </div>
                                     </div>
                                 </div>
@@ -952,22 +966,12 @@
                                 <div class="spoiler-content">
                                     <div class="input-group mb-2">
                                         <div class="input-group-prepend">
-                                            <div class="input-group-text btn btn-primary" id="copy-text-btn77">Copiar
-                                            </div>
-                                        </div>
-                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                            aria-describedby="btnGroupAddon" id="text77">- Aperte na imagem do rosto do
-                                            seu avatar e clique em "Meu Perfil";
-                                        </div>
-                                    </div>
-                                    <div class="input-group mb-2">
-                                        <div class="input-group-prepend">
                                             <div class="input-group-text btn btn-primary" id="copy-text-btn78">Copiar
                                             </div>
                                         </div>
                                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                            aria-describedby="btnGroupAddon" id="text78">- Em seguida, aperte onde tem
-                                            um lápis do lado direito, clique nele.
+                                            aria-describedby="btnGroupAddon" id="text78">- Aperte na imagem do rosto do
+                                            seu avatar e clique em "Meu Perfil";
                                         </div>
                                     </div>
                                     <div class="input-group mb-2">
@@ -975,9 +979,19 @@
                                             <div class="input-group-text btn btn-primary" id="copy-text-btn79">Copiar
                                             </div>
                                         </div>
+                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                                            aria-describedby="btnGroupAddon" id="text79">- Em seguida, aperte onde tem
+                                            um lápis do lado direito, clique nele.
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn btn-primary" id="copy-text-btn80">Copiar
+                                            </div>
+                                        </div>
                                         <div type="text" class="form-control font-weight-bold"
                                             aria-label="Exemplo de grupo de input" aria-describedby="btnGroupAddon"
-                                            id="text79">Essa é sua missão, agora anote nela: [RCC] Soldado [SUA TAG]
+                                            id="text80">Essa é sua missão, agora anote nela: [RCC] Soldado [SUA TAG]
                                         </div>
                                     </div>
                                 </div>
@@ -988,22 +1002,12 @@
                         colocar a sua missão corretamente para enviar a próxima mensagem.]</span>
                     <div class="input-group mb-2">
                         <div class="input-group-prepend">
-                            <div class="input-group-text btn btn-primary" id="copy-text-btn80">Copiar
-                            </div>
-                        </div>
-                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text80">A seguir, você deverá fazer a Supervisão (SUP),
-                            com um policial de estrela verde (Supervisor)
-                        </div>
-                    </div>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
                             <div class="input-group-text btn btn-primary" id="copy-text-btn81">Copiar
                             </div>
                         </div>
                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text81">e o Curso de Aprimoramento de Soldados (CAS),
-                            com um policial de estrela vermelha (Treinador).
+                            aria-describedby="btnGroupAddon" id="text81">A seguir, você deverá fazer a Supervisão (SUP),
+                            com um policial de estrela verde (Supervisor)
                         </div>
                     </div>
                     <div class="input-group mb-2">
@@ -1012,8 +1016,8 @@
                             </div>
                         </div>
                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text82">Quando você quiser voltar a RCC após ter saído
-                            do jogo, procure em seu navegador de quartos por: RCC
+                            aria-describedby="btnGroupAddon" id="text82">e o Curso de Aprimoramento de Soldados (CAS),
+                            com um policial de estrela vermelha (Treinador).
                         </div>
                     </div>
                     <div class="input-group mb-2">
@@ -1022,18 +1026,18 @@
                             </div>
                         </div>
                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text83">Os quartos de nossa polícia irão aparecer e
-                            basta você clicar no batalhão que estiver aberto.
+                            aria-describedby="btnGroupAddon" id="text83">Quando você quiser voltar a RCC após ter saído
+                            do jogo, procure em seu navegador de quartos por: RCC
                         </div>
                     </div>
-                    <div class="input-group mb-4">
+                    <div class="input-group mb-2">
                         <div class="input-group-prepend">
                             <div class="input-group-text btn btn-primary" id="copy-text-btn84">Copiar
                             </div>
                         </div>
                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text84">Lembre-se que presença no batalhão é essencial
-                            para sua carreira militar e para ser promovido.
+                            aria-describedby="btnGroupAddon" id="text84">Os quartos de nossa polícia irão aparecer e
+                            basta você clicar no batalhão que estiver aberto.
                         </div>
                     </div>
                     <div class="input-group mb-4">
@@ -1042,48 +1046,65 @@
                             </div>
                         </div>
                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text85">Alguma dúvida?
+                            aria-describedby="btnGroupAddon" id="text85">Lembre-se que presença no batalhão é essencial
+                            para sua carreira militar e para ser promovido.
                         </div>
                     </div>
-                    <div class="input-group">
+                    <div class="input-group mb-4">
                         <div class="input-group-prepend">
                             <div class="input-group-text btn btn-primary" id="copy-text-btn86">Copiar
                             </div>
                         </div>
                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text86">Aguarde, irei postar a instrução.
+                            aria-describedby="btnGroupAddon" id="text86">Alguma dúvida?
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text btn btn-primary" id="copy-text-btn87">Copiar
+                            </div>
+                        </div>
+                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                            aria-describedby="btnGroupAddon" id="text87">Aguarde, irei postar a instrução.
                         </div>
                     </div>
                 </div>
             </div>
-             <div class="alert alert-primary" role="alert">
-              <p>É de suma importância que poste todas suas instruções, mesmo que os alunos tenham reprovados ou saiam durante a aula;</p>
-              
-              <p>Certifique-se de que os nicks estejam corretos;</p>
-              
-              <p class="mb-4">Se o policial tiver caído ou esteja demonstrando inatividade, aguarde entre 3 a 5 minutos para postar a instrução;</p>
+            <div class="alert alert-primary" role="alert">
+                <p>É de suma importância que poste todas suas instruções, mesmo que os alunos tenham reprovados ou saiam
+                    durante a aula;</p>
 
-  <p class="mb-4">Caso ainda não tenha aberto o link no começo da instrução, <a href="https://iformv2.vercel.app/?username=&lesson=cap" class="alert-link">CLIQUE AQUI</a> e corrija o horário de início da instrução antes de confirmar o envio.</p>
+                <p>Certifique-se de que os nicks estejam corretos;</p>
 
-  <p class="font-weight-bold">Pontuação da aula: 2 pontos.</p>
-</div>
+                <p class="mb-4">Se o policial tiver caído ou esteja demonstrando inatividade, aguarde entre 3 a 5
+                    minutos para postar a instrução;</p>
 
-<div class="card">
-  <div class="card-header">Legenda</div>
-  <div class="card-body">
-    <p><span>Preto</span> - Tudo que deve ser falado durante a aula.</p>
-    <p><span class="font-weight-bold">Negrito</span> - Tudo que deverá ser destacado com uma coloração de balão diferente.</p>
-    <p><span class="font-weight-bold" style="color: #660000;">Marrom</span> - Temas que serão abordados durante a aula.</p>
-    <p><span class="font-weight-bold" style="color: red;">Vermelho</span> - Orientações para o instrutor.</p>
-    <p><span class="font-weight-bold" style="color: #330066;">Roxo</span> - Respostas das perguntas.</p>
-  </div>
-</div>
+                <p class="mb-4">Caso ainda não tenha aberto o link no começo da instrução, <a
+                        href="https://iformv2.vercel.app/?username=&lesson=cap" class="alert-link">CLIQUE AQUI</a> e
+                    corrija o horário de início da instrução antes de confirmar o envio.</p>
+
+                <p class="font-weight-bold">Pontuação da aula: 2 pontos.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Legenda</div>
+                <div class="card-body">
+                    <p><span>Preto</span> - Tudo que deve ser falado durante a aula.</p>
+                    <p><span class="font-weight-bold">Negrito</span> - Tudo que deverá ser destacado com uma coloração
+                        de balão diferente.</p>
+                    <p><span class="font-weight-bold" style="color: #660000;">Marrom</span> - Temas que serão abordados
+                        durante a aula.</p>
+                    <p><span class="font-weight-bold" style="color: red;">Vermelho</span> - Orientações para o
+                        instrutor.</p>
+                    <p><span class="font-weight-bold" style="color: #330066;">Roxo</span> - Respostas das perguntas.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <script src="js.js"></script>
-    
-  
+
+
 </body>
 
 </html>
