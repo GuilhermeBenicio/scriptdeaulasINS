@@ -42,6 +42,31 @@
         <div class="font-weight-bold bg-dark text-white text-center mb-3"><i
                 class="fas fa-pencil-alt text-white mr-2"></i>Curso de Formação de Cabos (CFC-2)</div>
         <div class="container">
+            <div class="card" id="card">
+                <div class="card-body">
+                    <p class="font-weight-bold">Atenção, instrutor! Leia as seguintes instruções:</p>
+                    <p class="font-weight-bold">• É expressamente proibido pular qualquer parte do script. A companhia
+                        dos instrutores tem como
+                        dever formar e treinar os devidos policiais com excelência, ou seja, qualquer transgressão no
+                        que se refere a qualidade da aula acarretará em severas punições, listadas no <a target="_blank"
+                            href="https://www.instrutores.site/ins-c%C3%B3digo-penal" class="alert-link">[INS] Código
+                            Penal
+                            dos Instrutores.</a></p>
+                    <p class="font-weight-bold">• Antes do início da instrução, <span id="formCFCII"></span> para que o
+                        formulário
+                        registre automaticamente o horário de início de sua instrução.</p>
+                    <p class="font-weight-bold">Pontuação de aula: 2 pontos.</p>
+                </div>
+            </div>
+
+            <script>
+                let nick = sessionStorage.getItem('nick');
+                let trecho1 = "https://iformv2.vercel.app/?username=";
+                let trecho2 = "&amp;lesson=cfcii";
+                let link = trecho1 + nick + trecho2
+                document.querySelector("#formCFCII").innerHTML =
+                    `<a target="_blank" href='${link}' class="alert-link">CLIQUE AQUI</a>`
+            </script>
             <div class="card mt-3 mb-3">
                 <div class="card-body">
                     <div class="input-group mb-2">
@@ -171,7 +196,8 @@
                                             </div>
                                         </div>
                                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                            aria-describedby="btnGroupAddon" id="text10">Por isso, o mais recomendável para ter um bom aproveitamento da aula pelo mobile, é que após
+                                            aria-describedby="btnGroupAddon" id="text10">Por isso, o mais recomendável
+                                            para ter um bom aproveitamento da aula pelo mobile, é que após
                                         </div>
                                     </div>
 
@@ -181,7 +207,8 @@
                                             </div>
                                         </div>
                                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                            aria-describedby="btnGroupAddon" id="text11">lhe passado o conteúdo, você o visualize sozinho e tente fazer os procedimentos conforme aprendido.
+                                            aria-describedby="btnGroupAddon" id="text11">lhe passado o conteúdo, você o
+                                            visualize sozinho e tente fazer os procedimentos conforme aprendido.
                                         </div>
                                     </div>
 
@@ -191,7 +218,8 @@
                                             </div>
                                         </div>
                                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                            aria-describedby="btnGroupAddon" id="text12">Feito isso, já tendo as contas ativas e sabendo usar o System de forma simultânea ao jogo,
+                                            aria-describedby="btnGroupAddon" id="text12">Feito isso, já tendo as contas
+                                            ativas e sabendo usar o System de forma simultânea ao jogo,
                                         </div>
                                     </div>
 
@@ -201,7 +229,8 @@
                                             </div>
                                         </div>
                                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                            aria-describedby="btnGroupAddon" id="text13">chame um instrutor para a continuidade de sua aula.
+                                            aria-describedby="btnGroupAddon" id="text13">chame um instrutor para a
+                                            continuidade de sua aula.
                                         </div>
                                     </div>
 
@@ -270,7 +299,8 @@
                                             </div>
                                         </div>
                                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                            aria-describedby="btnGroupAddon" id="text18">Agora que aprenderá a criar suas
+                                            aria-describedby="btnGroupAddon" id="text18">Agora que aprenderá a criar
+                                            suas
                                             contas no fórum e system, lembre-se que suas senhas
                                         </div>
                                     </div>
@@ -439,7 +469,8 @@
                                             </div>
                                         </div>
                                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                            aria-describedby="btnGroupAddon" id="text31">Acesse o seguinte link: bit*l4/cfc-2 (troque "4" por "y"), avise-me ao acessar.
+                                            aria-describedby="btnGroupAddon" id="text31">Acesse o seguinte link:
+                                            bit*l4/cfc-2 (troque "4" por "y"), avise-me ao acessar.
                                         </div>
                                     </div>
 
@@ -472,7 +503,7 @@
                                         </div>
                                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
                                             aria-describedby="btnGroupAddon" id="text34">Evite dormir. Caso fique +4
-                                            minutos ausente, envie um balão de fala branco. Pode começar a leit
+                                            minutos ausente, envie um balão de fala branco. Pode começar a leitura.
                                         </div>
                                     </div>
 
@@ -503,8 +534,8 @@
             </div>
 
             <div class="card mb-3">
-              <div class="card-body">
-                <div class="input-group mb-4">
+                <div class="card-body">
+                    <div class="input-group mb-4">
                         <div class="input-group-prepend">
                             <div class="input-group-text btn btn-primary" id="copy-text-btn36">Copiar</div>
                         </div>
@@ -513,51 +544,57 @@
                         </div>
                     </div>
 
-                     <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text btn btn-primary" id="copy-text-btn37">Copiar
-                                            </div>
-                                        </div>
-                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                            aria-describedby="btnGroupAddon" id="text37"><span class="font-weight-bold">Etapa 1:</span> Copie e cole aqui a SUA IDENWTIFICAÇÃO, encontrada pelo buscar usuário ou na listagem.
-                                        </div>
-                                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text btn btn-primary" id="copy-text-btn37">Copiar
+                            </div>
+                        </div>
+                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                            aria-describedby="btnGroupAddon" id="text37"><span class="font-weight-bold">Etapa 1:</span>
+                            Copie e cole aqui a SUA IDENWTIFICAÇÃO, encontrada pelo buscar usuário ou na listagem.
+                        </div>
+                    </div>
 
-                      <i class="fas fa-arrow-circle-right text-danger mb-4"></i> <span
-                                        class="text-danger">[Espere o(a) Cabo enviar a TAG, verifique-a e prossiga para a próxima etapa. Caso o(a) Cabo envie a TAG errada, auxilie-o(a).]</span>
+                    <i class="fas fa-arrow-circle-right text-danger mb-4"></i> <span class="text-danger">[Espere o(a)
+                        Cabo enviar a TAG, verifique-a e prossiga para a próxima etapa. Caso o(a) Cabo envie a TAG
+                        errada, auxilie-o(a).]</span>
 
-                      <div class="input-group mb-2">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text btn btn-primary" id="copy-text-btn38">Copiar
-                                            </div>
-                                        </div>
-                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                            aria-describedby="btnGroupAddon" id="text38"><span class="font-weight-bold">Etapa 2:</span> Copie e cole aqui a MINHA IDENTIFICAÇÃO, encontrada pelo buscar usuário ou na listagem.
-                                        </div>
-                                    </div>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text btn btn-primary" id="copy-text-btn38">Copiar
+                            </div>
+                        </div>
+                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                            aria-describedby="btnGroupAddon" id="text38"><span class="font-weight-bold">Etapa 2:</span>
+                            Copie e cole aqui a MINHA IDENTIFICAÇÃO, encontrada pelo buscar usuário ou na listagem.
+                        </div>
+                    </div>
 
-                                    <i class="fas fa-arrow-circle-right text-danger mb-4"></i> <span
-                                        class="text-danger">[Espere o(a) Cabo enviar a TAG, verifique-a e prossiga para a próxima etapa. Caso o(a) Cabo envie a TAG errada, auxilie-o(a).]</span>
+                    <i class="fas fa-arrow-circle-right text-danger mb-4"></i> <span class="text-danger">[Espere o(a)
+                        Cabo enviar a TAG, verifique-a e prossiga para a próxima etapa. Caso o(a) Cabo envie a TAG
+                        errada, auxilie-o(a).]</span>
 
-                                        <div class="input-group mb-2">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text btn btn-primary" id="copy-text-btn39">Copiar
-                                            </div>
-                                        </div>
-                                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                            aria-describedby="btnGroupAddon" id="text39"><span class="font-weight-bold">Etapa 3:</span> Copie e cole aqui um EXONERADO, encontrado na Listagem: Exonerados.
-                                        </div>
-                                    </div>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text btn btn-primary" id="copy-text-btn39">Copiar
+                            </div>
+                        </div>
+                        <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
+                            aria-describedby="btnGroupAddon" id="text39"><span class="font-weight-bold">Etapa 3:</span>
+                            Copie e cole aqui um EXONERADO, encontrado na Listagem: Exonerados.
+                        </div>
+                    </div>
 
-                                    <i class="fas fa-arrow-circle-right text-danger mb-4"></i> <span
-                                        class="text-danger">[Espere o(a) Cabo enviar a TAG, verifique-a e prossiga para a próxima etapa. Caso o(a) Cabo envie a TAG errada, auxilie-o(a).]</span>
-              </div>
+                    <i class="fas fa-arrow-circle-right text-danger mb-4"></i> <span class="text-danger">[Espere o(a)
+                        Cabo enviar a TAG, verifique-a e prossiga para a próxima etapa. Caso o(a) Cabo envie a TAG
+                        errada, auxilie-o(a).]</span>
+                </div>
             </div>
 
             <div class="card mb-3">
-              <div class="card-body">
+                <div class="card-body">
 
-                <div class="input-group mb-4">
+                    <div class="input-group mb-4">
                         <div class="input-group-prepend">
                             <div class="input-group-text btn btn-primary" id="copy-text-btn40">Copiar</div>
                         </div>
@@ -571,7 +608,8 @@
                             <div class="input-group-text btn btn-primary" id="copy-text-btn41">Copiar</div>
                         </div>
                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text41">Parabéns, você foi qualificado(a) no Curso de Formação de Cabos (CFC).
+                            aria-describedby="btnGroupAddon" id="text41">Parabéns, você foi qualificado(a) no Curso de
+                            Formação de Cabos (CFC).
                         </div>
                     </div>
 
@@ -580,19 +618,21 @@
                             <div class="input-group-text btn btn-primary" id="copy-text-btn42">Copiar</div>
                         </div>
                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text42" style="color: #4C1919">Altere sua missão e troque [CFC1] por [CFC].
+                            aria-describedby="btnGroupAddon" id="text42" style="color: #4C1919">Altere sua missão e
+                            troque [CFC1] por [CFC].
                         </div>
                     </div>
 
-                    <i class="fas fa-arrow-circle-right text-danger"></i> <span
-                                        class="text-danger">[Espere o militar realizar os procedimentos para seguir o script]</span>
+                    <i class="fas fa-arrow-circle-right text-danger"></i> <span class="text-danger">[Espere o militar
+                        realizar os procedimentos para seguir o script]</span>
 
-                                        <div class="input-group mb-4">
+                    <div class="input-group mb-4">
                         <div class="input-group-prepend">
                             <div class="input-group-text btn btn-primary" id="copy-text-btn43">Copiar</div>
                         </div>
                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text43">Agora que concluiu o CFC, procure um supervisor (brevê verde) para obter a SEG.
+                            aria-describedby="btnGroupAddon" id="text43">Agora que concluiu o CFC, procure um supervisor
+                            (brevê verde) para obter a SEG.
                         </div>
                     </div>
 
@@ -604,31 +644,45 @@
                             aria-describedby="btnGroupAddon" id="text44">Aguarde, irei postar a instrução.
                         </div>
                     </div>
-              </div>
+                </div>
             </div>
 
             <div class="alert alert-primary" role="alert">
-              <p>É de suma importância que poste todas suas instruções, mesmo que os alunos tenham reprovados ou saiam durante a aula;</p>
-              
-              <p>Certifique-se de que os nicks estejam corretos;</p>
-              
-              <p class="mb-4">Se o policial tiver caído ou esteja demonstrando inatividade, aguarde entre 3 a 5 minutos para postar a instrução;</p>
+                <p>É de suma importância que poste todas suas instruções, mesmo que os alunos tenham reprovados ou saiam
+                    durante a aula;</p>
 
-  <p class="mb-4">Caso ainda não tenha aberto o link no começo da instrução, <a href="https://iformv2.vercel.app/?username=&lesson=cfcii" class="alert-link">CLIQUE AQUI</a> e corrija o horário de início da instrução antes de confirmar o envio.</p>
+                <p>Certifique-se de que os nicks estejam corretos;</p>
 
-  <p class="font-weight-bold">Pontuação da aula: 1 ponto.</p>
-</div>
+                <p class="mb-4">Se o policial tiver caído ou esteja demonstrando inatividade, aguarde entre 3 a 5
+                    minutos para postar a instrução;</p>
 
-<div class="card">
-  <div class="card-header">Legenda</div>
-  <div class="card-body">
-    <p><span>Preto</span> - Tudo que deve ser falado durante a aula.</p>
-    <p><span class="font-weight-bold">Negrito</span> - Tudo que deverá ser destacado com uma coloração de balão diferente.</p>
-    <p><span class="font-weight-bold" style="color: #660000;">Marrom</span> - Temas que serão abordados durante a aula.</p>
-    <p><span class="font-weight-bold" style="color: red;">Vermelho</span> - Orientações para o instrutor.</p>
-    <p><span class="font-weight-bold" style="color: #330066;">Roxo</span> - Respostas das perguntas.</p>
-  </div>
-</div>
+                <p class="mb-4">Caso ainda não tenha aberto o link no começo da instrução, <span id="formCFCCII"></span>
+                    e
+                    corrija o horário de início da instrução antes de confirmar o envio.</p>
+            </div>
+
+            <script>
+                let nickk = sessionStorage.getItem('nick');
+                let trecho = "https://iformv2.vercel.app/?username=";
+                let trechoo = "&amp;lesson=cfcii";
+                let linkk = trecho + nickk + trechoo
+                document.querySelector("#formCFCCII").innerHTML =
+                    `<a target="_blank" href='${linkk}' class="alert-link">CLIQUE AQUI</a>`
+            </script>
+
+            <div class="card">
+                <div class="card-header">Legenda</div>
+                <div class="card-body">
+                    <p><span>Preto</span> - Tudo que deve ser falado durante a aula.</p>
+                    <p><span class="font-weight-bold">Negrito</span> - Tudo que deverá ser destacado com uma coloração
+                        de balão diferente.</p>
+                    <p><span class="font-weight-bold" style="color: #660000;">Marrom</span> - Temas que serão abordados
+                        durante a aula.</p>
+                    <p><span class="font-weight-bold" style="color: red;">Vermelho</span> - Orientações para o
+                        instrutor.</p>
+                    <p><span class="font-weight-bold" style="color: #330066;">Roxo</span> - Respostas das perguntas.</p>
+                </div>
+            </div>
     </section>
 
     <script src="js.js"></script>
