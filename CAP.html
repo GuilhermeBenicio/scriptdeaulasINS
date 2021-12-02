@@ -38,6 +38,31 @@
         <div class="font-weight-bold bg-dark text-white text-center mb-3"><i
                 class="fas fa-pencil-alt text-white mr-2"></i>Curso de Aperfeiçoamento de Praças (CAP)</div>
         <div class="container">
+            <div class="card" id="card">
+                <div class="card-body">
+                    <p class="font-weight-bold">Atenção, instrutor! Leia as seguintes instruções:</p>
+                    <p class="font-weight-bold">• É expressamente proibido pular qualquer parte do script. A companhia
+                        dos instrutores tem como
+                        dever formar e treinar os devidos policiais com excelência, ou seja, qualquer transgressão no
+                        que se refere a qualidade da aula acarretará em severas punições, listadas no <a target="_blank"
+                            href="https://www.instrutores.site/ins-c%C3%B3digo-penal" class="alert-link">[INS] Código
+                            Penal
+                            dos Instrutores.</a></p>
+                    <p class="font-weight-bold">• Antes do início da instrução, <span id="cap"></span> para que o
+                        formulário
+                        registre automaticamente o horário de início de sua instrução.</p>
+                    <p class="font-weight-bold">Pontuação de aula: 2 pontos.</p>
+                </div>
+            </div>
+
+            <script>
+                let nick = sessionStorage.getItem('nick');
+                let trecho1 = "https://iformv2.vercel.app/?username=";
+                let trecho2 = "&amp;lesson=cap";
+                let link = trecho1 + nick + trecho2
+                document.querySelector("#cap").innerHTML =
+                    `<a target="_blank" href='${link}' class="alert-link">CLIQUE AQUI</a>`
+            </script>
             <div class="card mt-3 mb-3">
                 <div class="card-body">
                     <div class="input-group mb-2">
@@ -519,7 +544,8 @@
                                     <div class="input-group-text btn btn-primary" id="copy-text-btn42">Copiar</div>
                                 </div>
                                 <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                                    aria-describedby="btnGroupAddon" id="text42">Acesse o seguinte link: bit.l4/cap-ins (troque "4" por "y"), avise-me ao acessar.
+                                    aria-describedby="btnGroupAddon" id="text42">Acesse o seguinte link: bit.l4/cap-ins
+                                    (troque "4" por "y"), avise-me ao acessar.
                                 </div>
                             </div>
 
@@ -851,7 +877,8 @@
                             <div class="input-group-text btn btn-primary" id="copy-text-btn73">Copiar</div>
                         </div>
                         <div type="text" class="form-control" aria-label="Exemplo de grupo de input"
-                            aria-describedby="btnGroupAddon" id="text73">Caso queira testar seus conhecimentos, após sair daqui, acesse: bit.l4/cap-teste (trocar 4 por y)
+                            aria-describedby="btnGroupAddon" id="text73">Caso queira testar seus conhecimentos, após
+                            sair daqui, acesse: bit.l4/cap-teste (trocar 4 por y)
                         </div>
                     </div>
 
@@ -885,23 +912,28 @@
                 <p class="mb-4">Se o policial tiver caído ou esteja demonstrando inatividade, aguarde entre 3 a 5
                     minutos para postar a instrução;</p>
 
-                <p class="mb-4">Caso ainda não tenha aberto o link no começo da instrução, <a
-                        href="https://iformv2.vercel.app/?username=&lesson=cap" class="alert-link">CLIQUE AQUI</a> e
+                <p class="mb-4">Caso ainda não tenha aberto o link no começo da instrução, <span id="formCAPP"></span> e
                     corrija o horário de início da instrução antes de confirmar o envio.</p>
-
-                <p class="font-weight-bold">Pontuação da aula: 1 ponto.</p>
             </div>
+
+            <script>
+                let nickk = sessionStorage.getItem('nick');
+                let trecho = "https://iformv2.vercel.app/?username=";
+                let trechoo = "&amp;lesson=cap";
+                let linkk = trecho + nickk + trechoo
+                document.querySelector("#formCAPP").innerHTML =
+                    `<a target="_blank" href='${linkk}' class="alert-link">CLIQUE AQUI</a>`
+            </script>
 
             <div class="card">
                 <div class="card-header">Legenda</div>
                 <div class="card-body">
                     <p><span class="font-weight-bold">Preto</span> - Tudo que deve ser falado durante a aula.</p>
-                    <p><span class="font-weight-bold" style="color: #660000;">Marrom</span> - Tudo que deve ser falado
+                    <p><span class="font-weight-bold" style="color: #660000;">Marrom</span> - Temas que serão abordados
                         durante a aula.</p>
-                    <p><span class="font-weight-bold" style="color: red;">Vermelho</span> - Tudo que deve ser falado
-                        durante a aula.</p>
-                    <p><span class="font-weight-bold" style="color: #330066;">Roxo</span> - Tudo que deve ser falado
-                        durante a aula.</p>
+                    <p><span class="font-weight-bold" style="color: red;">Vermelho</span> - Orientações para o
+                        instrutor.</p>
+                    <p><span class="font-weight-bold" style="color: #330066;">Roxo</span> - Respostas das perguntas.</p>
                 </div>
             </div>
     </section>
